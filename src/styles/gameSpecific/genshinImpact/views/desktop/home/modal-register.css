@@ -1,0 +1,161 @@
+.modal-register .modal-header {
+  border-bottom: 0 !important;
+  border-radius: 24px !important;
+}
+
+.modal-register .modal-header .btn-close {
+
+}
+
+.modal-register .modal-content {
+  border-radius: 24px;
+}
+
+.modal-register .modal-body {
+  height: 440px;
+}
+
+.modal-register-left {
+  
+}
+
+.modal-register-left-background {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 410px;
+  border-radius: 16px;
+}
+
+.modal-register-left-char {
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 540px;
+  overflow: hidden;
+  height: 440px;
+  scale: 1;
+  top: -30px;
+  left: -100px;
+  position: relative;
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.05));
+}
+
+.modal-register-right {
+  z-index: 999;
+  position: relative;
+}
+
+.modal-register-area {
+  padding: 0 40px;
+  height: 380px;
+  align-content: center;
+}
+
+.modal-register-area .form-control {
+  height: 48px;
+  border-radius: 8px;
+  background-color: var(--mygray-20);
+}
+
+.modal-register-header-text {
+  color: var(--mygray);
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 0 !important;
+  padding: 0;
+  line-height: 1;
+}
+
+.modal-register-right .btn-close {
+  z-index: 999;
+  position: relative;
+  font-size: 10px !important;
+  color: black !important;
+  opacity: 1 !important;
+}
+
+.modal-register-title {
+  font-weight: bold;
+  margin-bottom: 16px !important;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--myindigo) !important;
+  padding: 4px 8px !important;
+  border-radius: 8px !important;
+  border: 1px solid var(--myindigo) !important;
+  color: #fff !important;
+  font-weight: bold;
+  height: 48px;
+  font-weight: bold;
+  display: flex;
+  vertical-align: middle;
+  transition: 800ms;
+}
+
+.btn-primary:hover {
+  background-color: var(--myindigo-90) !important;
+  border: 1px solid var(--myindigo-90) !important;
+  transition: 800ms;
+}
+
+.modal-register-moremethods {
+  display: flex;
+}
+
+.modal-register-moremethods hr {
+  height: 2px;
+  width: auto;
+}
+
+.modal-register .form-check-label {
+  color: var(--myblack-60)
+}
+
+.modal-register-remembertext {
+  font-size: 12px;
+}
+
+.btn-secondary {
+  background-color: white !important;
+  padding: 4px 8px !important;
+  border-radius: 8px !important;
+  border: 1px solid var(--myindigo) !important;
+  color: var(--myindigo) !important;
+  font-weight: bold;
+  height: 48px;
+  font-weight: bold;
+  display: flex;
+  vertical-align: middle;
+  transition: 800ms;
+}
+
+.btn-secondary:hover {
+  background-color: var(--myindigo-10) !important;
+  transition: 800ms;
+}
+
+.form-check-input:checked {
+  background-color: var(--myindigo) !important;
+  border-color: var(--myindigo) !important;
+}
+
+::placeholder {
+  opacity: 0.5 !important; 
+}
+
+*:focus {
+  box-shadow: 0 0 0 2px var(--myindigo-20) !important;
+  border-color: var(--myindigo) !important;
+}
+
+.modal-dialog {
+  display: block !important;
+  align-content: center !important;
+}
+
+.modal-register-header-area {
+  margin-bottom: 8px;
+}

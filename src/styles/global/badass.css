@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #181818 !important;
+  font-family: 'dmsans' !important;
+  cursor: default;
+}
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #414141;
+  padding: 4px;
+  border-radius: 1px solid #d1dbe3;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d1dbe3; 
+  border-radius: 16px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #d1dbe3; 
+}
+
+.p, p {
+  margin-bottom: 8px !important;
+}
+
+.h1, h1 {
+  margin: 0 !important;
+}
+
+.h2, h2 {
+  margin: 0 !important;
+}
+
+.h3, h3 {
+  margin: 0 !important;
+}
+
+.h4, h4 {
+  margin: 0 !important;
+}
+
+li {
+  text-decoration: none !important;
+  list-style: none !important;
+}
+
+ul {
+  margin: 0 !important;
+}
+
+button {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: none !important;
+}
+
+button:focus {
+  outline: none !important;
+  box-shadow: none !important; 
+  background-color: none !important;
+}
+
+button:active {
+  outline: none !important;
+  background-color: none !important;
+  box-shadow: none !important; 
+}
+
+a {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: none !important;
+}
+
+a:focus {
+  outline: none !important;
+  box-shadow: none !important; 
+  background-color: none !important;
+}
+
+a:active {
+  outline: none !important;
+  background-color: none !important;
+  box-shadow: none !important; 
+}
+
+.event-green {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(30, 241, 164, 0.1) 100%);
+}
+
+.event-blue {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(69, 30, 241, 0.1) 100%);
+}
+
+.event-indigo {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, var(--myindigo-40) 100%);
+}
+
+.event-yellow {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, var(--myyellow-40) 100%);
+}

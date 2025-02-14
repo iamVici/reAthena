@@ -1,0 +1,148 @@
+.news-content {
+  margin: 64px 0;
+}
+
+.flag-news {
+  background-color: var(--myblue);
+  color: var(--mywhite);
+}
+
+.caption-main-banner-news {
+  height: 320px;
+  position: relative;
+  z-index: 1;
+  background-position: 50% 20%;
+  margin-right: -800px;
+  filter: saturate(1.5);
+  overflow: hidden;
+  transition: 400ms;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.caption-main-banner-news-a {
+  background-image: url("../../../../../../../public/assets/gameSpecific/genshinImpact/backgrounds/news/Xianyun-horizontalbanner.jpg");
+  background-size: cover;
+  background-position: center 30%;
+  margin-right: -200px;
+  filter: saturate(1.5);
+  transition: opacity 0.5s ease-in-out;
+}
+
+.header-news-c {
+  background-image: url('../../../../../../../public/assets/gameSpecific/genshinImpact/backgrounds/news/version-4-8.jpg');
+  filter: saturate(1.5);
+  background-position: right !important;
+  height: 294px !important;
+}
+
+.header-news-b {
+  background-image: url('../../../../../../../public/assets/gameSpecific/genshinImpact/backgrounds/news/version-4-9.jpg');
+  filter: saturate(1.5);
+  background-position: left !important;
+  height: 294px !important;
+}
+
+.header-news-a {
+  background-image: url('../../../../../../../public/assets/gameSpecific/genshinImpact/backgrounds/news/version-5-0.jpg');
+  filter: saturate(1.5);
+  background-position: right !important;
+  height: 294px !important;
+}
+
+.simple-frame-horizontal {
+  position: relative;
+  display: flex;
+  margin: 16px 0;
+  padding: 16px;
+  border: 1px solid var(--mygray-40);
+  border-radius: 24px;
+}
+
+.simple-frame-horizontal .flag {
+  margin-top: -24px !important;
+  margin-right: 16px !important;
+}
+
+.frame-horizontal-header {
+  height: 248px;
+  width: 40%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.header-article-a {
+  background-image: url('../../../../../../../public/assets/gameSpecific/genshinImpact/backgrounds/news/article-a.jpg');
+  filter: saturate(1.5);
+}
+
+.header-article-b {
+  background-image: url('../../../../../../../public/assets/gameSpecific/genshinImpact/backgrounds/news/article-b.jpg');
+  filter: saturate(1.5);
+}
+
+.header-article-c {
+  background-image: url('../../../../../../../public/assets/gameSpecific/genshinImpact/backgrounds/news/article-c.jpg');
+  filter: saturate(1.5);
+}
+
+.frame-horizontal-description-area {
+  display: flex;
+  flex-direction: column;
+  width: 44%;
+  padding: 0 24px;
+}
+
+.frame-horizontal-action-area {
+  width: 16%;
+  margin-top: auto;
+}
+
+.frame-horizontal-action-autor {
+  width: 160px;
+  height: 160px;
+  background-image: url('../../../../../../../public/assets/users/avatar/iamvici-avatar.jpg');
+  background-size: cover;
+  border-radius: 24px;
+}
+
+.frame-horizontal-action .main-link {
+  width: 100% !important;
+}
+
+.article-tag {
+  font-size: 16px;
+  color: var(--my-gray-40);
+  margin-top: auto;
+}
+
+.article-hr {
+  width: 72%;
+  height: 1px;
+  margin-left: 8px;
+  border: 1px solid var(--mygray-40);
+  align-self: center;
+}
+
+.article-signature {
+  display: flex;
+  margin-top: auto;
+}
+
+.frame-horizontal-description-area .event-title {
+  font-size: 24px !important;
+  padding-bottom: 8px !important;
+}
+
+.frame-horizontal-description-area .event-intro {
+  -webkit-line-clamp: 4 !important;
+}
+
+.article-date {
+  font-size: 16px;
+  color: var(--my-gray-40);
+  margin-bottom: 8px;
+}

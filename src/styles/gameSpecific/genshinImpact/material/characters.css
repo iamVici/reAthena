@@ -1,0 +1,221 @@
+.event-inazuma {
+  background-image: url('../../../../../public/assets/gameSpecific/genshinImpact/backgrounds/locations/inazuma/inazuma-pb.jpg');
+}
+
+.event-inazuma:hover {
+  background-image: url('../../../../../public/assets/gameSpecific/genshinImpact/backgrounds/locations/inazuma/inazuma-cl.jpg');
+}
+
+.active.event-inazuma {
+  background-image: url('../../../../../public/assets/gameSpecific/genshinImpact/backgrounds/locations/inazuma/inazuma-cl.jpg');
+}
+
+.char-yae {
+  background-image: url('../../../../../public/assets/gameSpecific/genshinImpact/character/Yaemiko/yaemiko-full.png');
+}
+
+.char-nilou {
+  background-image: url('../../../../../public/assets/gameSpecific/genshinImpact/character/nilou/nilou.png');
+}
+
+.char-hutao {
+  background-image: url('../../../../../public/assets/gameSpecific/genshinImpact/character/hutao/hutao.png');
+}
+
+.char-clorinde {
+  background-image: url('../../../../../public/assets/gameSpecific/genshinImpact/character/Clorinde/clorinde-full.png');
+  filter: saturate(1.2);
+}
+
+.char-ganyu {
+  background-image: url('../../../../../public/assets/gameSpecific/genshinImpact/character/ganyu/ganyu.png');
+}
+
+.mainchar-xiao {
+  background-image: url('../../../../../public/assets/gameSpecific/genshinImpact/character/Xiao/xiao.png');
+  scale: 1 !important;
+  mix-blend-mode: hard-light;
+  left: 440px;
+  top: 0;
+}
+
+.char-xiao {
+  background-image: url('../../../../../public/assets/gameSpecific/genshinImpact/character/Xiao/xiao.png');
+}
+
+.mainchar-yaemiko {
+  background-image: url('../../../../../public/assets/gameSpecific/genshinImpact/character/Yaemiko/yaemiko-full.png');
+}
+
+.banner-inazuma {
+  background-image: url('../../../../../public/assets/gameSpecific/genshinImpact/backgrounds/locations/inazuma/inazuma-pb.jpg');
+}
+
+.banner-inazuma-cl {
+  background-image: url('../../../../../public/assets/gameSpecific/genshinImpact/backgrounds/locations/inazuma/inazuma-cl.jpg');
+}
+
+.char-furina-full {
+  background-image: url('../../../../../public/assets/gameSpecific/genshinImpact/character/furina/Furina-full.png');
+}
+
+.char-xiao-full {
+  background-image: url('../../../../../public/assets/gameSpecific/genshinImpact/character/xiao/xiao-full.png');
+}
+
+.char-bennet-full {
+  background-image: url('../../../../../public/assets/gameSpecific/genshinImpact/character/bennet/Bennet-full.png');
+}
+
+.char-fischl-full {
+  background-image: url('../../../../../public/assets/gameSpecific/genshinImpact/character/Fischl/fischl-full.png');
+}
+
+.element-anemo {
+  content: "";
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/material/elements/element_anemo.webp");
+}
+
+.element-electro {
+  content: "";
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/material/elements/element_electro.webp");
+}
+
+.element-pyro {
+  content: "";
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/material/elements/element_pyro.webp");
+}
+
+.element-hydro {
+  content: "";
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/material/elements/element_hydro.webp");
+}
+
+.element-dendro {
+  content: "";
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/material/elements/element_dendro.webp");
+}
+
+.element-geo {
+  content: "";
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/material/elements/element_geo.webp");
+}
+
+.element-cryo {
+  content: "";
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/material/elements/element_cryo.webp");
+}
+
+.item-mora::before {
+  content: "";
+  background-image: url('../../../../../public/assets/gameSpecific/genshinImpact/material/resources/Item_Mora.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.item-primogem::before {
+  content: "";
+  background-image: url('../../../../../public/assets/gameSpecific/genshinImpact/material/resources/Item_Primogem.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.char-raiden {
+  background-image: url('../../../../../public/assets/gameSpecific/genshinImpact/character/Raiden/raiden.png');
+}
+
+.face-raiden {
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/character/Raiden/raiden-face.jpg");
+}
+
+.card-raiden {
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/character/Raiden/raiden-card.gif");
+}
+
+.card-beidou {
+  content: "";
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/character/Beidou/beidou-card.gif");
+}
+
+.face-beidou {
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/character/Beidou/beidou-face.jpg");
+}
+
+.card-hutao {
+  content: "";
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/character/Hutao/hutao-card.gif");
+}
+
+.face-hutao {
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/character/Hutao/hutao-face.jpg");
+}
+
+.card-nilou {
+  content: "";
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/character/Nilou/nilou-card.gif");
+}
+
+.face-nilou {
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/character/Nilou/nilou-face.jpg");
+}
+
+.card-xiao {
+  content: "";
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/character/Xiao/xiao-card.gif");
+}
+
+.face-xiao {
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/character/Xiao/xiao-face.jpg");
+}
+
+.card-zhongli {
+  content: "";
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/character/Zhongli/zhongli-card.gif");
+}
+
+.face-zhongli {
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/character/Zhongli/zhongli-face.jpg");
+}
+
+.card-mona {
+  content: "";
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/character/Mona/mona-card.gif");
+}
+
+.face-mona {
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/character/Mona/mona-face.jpg");
+}
+
+.card-eula {
+  content: "";
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/character/Eula/eula-card.gif");
+}
+
+.face-eula {
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/character/Eula/eula-face.jpg");
+}
+
+.card-baizhu {
+  content: "";
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/character/Baizhu/baizhu-card.gif");
+}
+
+.face-baizhu {
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/character/Baizhu/baizhu-face.jpg");
+}
+
+.face-yelan {
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/character/Yelan/yelan-face.jpg");
+}
+
+.face-kokomi {
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/character/Kokomi/kokomi-face.jpg");
+}

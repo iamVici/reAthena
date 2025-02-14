@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<!-- Starting -->
+	<title>Re: Athena</title>
+	<meta name="description" content="Project Re: Athena">
+	<link rel="icon" type="image/x-icon" href="../../../public/assets/common/logo/favicon.jpg">
+	<meta name="author" content='Victor "Vici" Pires'>
+	<meta name="keywords" content="design, web development, portfolio, games, genshin impact">
+	<!-- Meta -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- Styles: Global -->
+	<link rel="stylesheet" href="../../styles/global/badass.css">
+	<link rel="stylesheet" href="../../styles/global/athena-library.css">
+	<link rel="stylesheet" href="../../styles/fonts/all.css">
+	<link rel="stylesheet" href="../../styles/gameSpecific/genshinImpact/views/desktop/home/modal-login.css">
+	<!-- Styles: Index.html -->
+	<link rel="stylesheet" href="../../../src/styles/global/views/index/index.css">
+	<link rel="stylesheet" href="../../../src/styles/gameSpecific/genshinImpact/menu/menu-select.css">
+	<!-- Bootstrap + FontAwesome git init -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+</head>
+
+<body>
+
+	<div class="select-menu-area">
+		<div class="select-menu-base">
+			<div class="select-menu-content">
+				<ul>
+					<!-- Genshin Impact -->
+					<li>
+						<button class="select-menu-link menu-link-genshin active" type="button" data-game="genshin"
+							data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="select-menu-tooltip"
+							data-bs-title="Genshin Impact">
+							<img class="select-menu-icon active" alt="Genshin Impact"
+								src="../../../public/assets/common/logo/logo-genshin.png">
+						</button>
+					</li>
+					<!-- Whutering Waves -->
+					<li>
+						<button class="select-menu-link menu-link-whutering offline" type="button" data-game="whutering"
+							data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="select-menu-tooltip"
+							data-bs-title="Whutering Waves">
+							<img class="select-menu-icon" alt="Whutering Waves"
+								src="../../../public/assets/common/logo/logo-whuteringwaves.png">
+						</button>
+					</li>
+					<li>
+						<!-- Reverse 1999 -->
+						<button class="select-menu-link menu-link-reverse offline" type="button" data-game="reverse"
+						data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="select-menu-tooltip"
+						data-bs-title="Reverse 1999">
+						<img class="select-menu-icon" alt="Reverse 1999"
+							src="../../../public/assets/common/logo/logo-reverse.png">
+					</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<main class="index-content">
+
+
+		<video id="backbg-indexVideo" class="video video-genshin active" autoplay muted loop
+			src="../../../public/assets/common/videos/intro-genshin.mp4" type="video/mp4"></video>
+		<video id="backbg-indexVideo" class="video video-whutering hidden" autoplay muted loop
+			src="../../../public/assets/common/videos/intro-wuthering.mp4" type="video/mp4"></video>
+		<video id="backbg-indexVideo" class="video video-reverse hidden" autoplay muted loop
+		src="../../../public/assets/common/videos/intro-reverse.mp4" type="video/mp4"></video>
+		<!-- <video id="backbg-indexVideo hidden" class="video" autoplay muted loop src="../../../public/assets/common/videos/intro-wuthering.mp4" type="video/mp4"></video>-->
+
+		<!-- Select Game Menu -->
+
+		<div class="index-form">
+			<div class="left">
+				<div class="index-form-header">
+					<div class="menu-logo">
+						<div class="logo-text">
+							<span>explore</span>
+							<p>Athena</p>
+						</div>
+					</div>
+				</div>
+				<div class="index-form-middle">
+					<div>
+						<h2 class="modal-title">Explore Athena</h2>
+						<p class="modal-description">
+							Welcome, player.
+							By creating an account, you will agree to our terms of service and be
+							ready to enjoy what Athena
+							has to offer.</p>
+					</div>
+					<div class="index-form-nav">
+						<ul class="nav nav-pills" id="pills-tab" role="tablist">
+							<li class="nav-item" role="presentation">
+								<button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+									type="button" role="tab" aria-controls="pills-home" aria-selected="true">Signup</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+									type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Sign In</button>
+							</li>
+						</ul>
+					</div>
+
+					<div class="tab-content" id="pills-tabContent">
+						<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+							tabindex="0">
+							<div class="modal-register-area">
+								<form>
+									<div class="mb-2">
+										<span class="modal-register-span">E-mail address:</span>
+										<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+											placeholder="youremail@here.com">
+									</div>
+									<div class="mb-2">
+										<span class="modal-register-span"></span>Password:</span>
+										<input type="password" class="form-control" id="exampleInputPassword1" placeholder="your password">
+									</div>
+									<div class="mb-2">
+										<input type="password" class="form-control" id="exampleInputPassword1"
+											placeholder="confirm password">
+									</div>
+									<div class="mb-3 form-check">
+										<input type="checkbox" class="form-check-input" id="RegisterUseremail">
+										<label class="form-check-label modal-register-remembertext" for="RegisterUseremail">
+											Would you like to receive news by e-mail?
+										</label>
+									</div>
+									<button type="submit" class="btn btn-primary w-100 mb-2">Sign up</button>
+								</form>
+								<div class="modal-register-options">
+									<hr>
+									<p>or Sign up with:</p>
+									<hr>
+								</div>
+								<div class="row">
+									<div class="col pe-0">
+										<button class="btn btn-secondary w-100">
+											<i class="bi bi-google"></i>
+										</button>
+									</div>
+									<div class="col pe-0">
+										<button class="btn btn-secondary w-100">
+											<i class="bi bi-google"></i>
+										</button>
+									</div>
+									<div class="col">
+										<button class="btn btn-secondary w-100">
+											<i class="bi bi-google"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+							tabindex="0">
+							<div class="modal-login-area">
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="index-form-footer">
+
+				</div>
+
+				<div class="index-form-footer">
+					<span>Developed by: Vici</span>
+				</div>
+
+			</div>
+			<div class="right">
+				<div class="spotify-container">
+					<iframe style="border-radius:12px"
+						src="https://open.spotify.com/embed/track/0FVuyC9RP5MACjp4lgU3qZ?utm_source=generator&theme=0" width="100%"
+						height="96px" frameBorder="0" allowfullscreen=""
+						allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+				</div>
+				<div class="right-genshin active">
+					<div class="video-area">
+						<div class="video-content">
+							<video id="bg-indexVideo" class="video-genshin" autoplay muted loop src="../../../public/assets/common/videos/intro-genshin.mp4" type="video/mp4">
+								<div class="banner-shadow-bottom"></div>
+								<div class="simple-frame-area">
+									<div class="frame-description-area">
+										<h4 class="event-title">Garden<br>of Memories</h4>
+										<p class="event-intro">
+											In the flowery fields of Mondstadt, a mysterious gardener appears cultivating golden flowers that
+											seem to hold memories of ancient times. The Traveler is invited to explore this enchanted garden,
+											where each harvested flower reveals fragments of the past. Participate in special collection
+											challenges, interact with flower spirits, and unravel the
+										</p>
+										<a class="main-link main-link-outline">Read More <span>↗</span></a>
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="right-whutering hidden">
+					<div class="video-area">
+						<div class="video-content">
+							<video id="bg-indexVideo" class="video-whutering" autoplay muted loop src="../../../public/assets/common/videos/intro-wuthering.mp4" type="video/mp4">
+								<div class="banner-shadow-bottom"></div>
+								<div class="simple-frame-area">
+									<div class="frame-description-area">
+										<h4 class="event-title">Garden<br>of Memories</h4>
+										<p class="event-intro">
+											In the flowery fields of Mondstadt, a mysterious gardener appears cultivating golden flowers that
+											seem to hold memories of ancient times. The Traveler is invited to explore this enchanted garden,
+											where each harvested flower reveals fragments of the past. Participate in special collection
+											challenges, interact with flower spirits, and unravel the
+										</p>
+										<a class="main-link main-link-outline">Read More <span>↗</span></a>
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="right-reverse hidden">
+					<div class="video-area">
+						<div class="video-content">
+							<video id="bg-indexVideo" class="video-whutering" autoplay muted loop src="../../../public/assets/common/videos/intro-reverse.mp4" type="video/mp4">
+								<div class="banner-shadow-bottom"></div>
+								<div class="simple-frame-area">
+									<div class="frame-description-area">
+										<h4 class="event-title">Garden<br>of Memories</h4>
+										<p class="event-intro">
+											In the flowery fields of Mondstadt, a mysterious gardener appears cultivating golden flowers that
+											seem to hold memories of ancient times. The Traveler is invited to explore this enchanted garden,
+											where each harvested flower reveals fragments of the past. Participate in special collection
+											challenges, interact with flower spirits, and unravel the
+										</p>
+										<a class="main-link main-link-outline">Read More <span>↗</span></a>
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</main>
+
+	<!-- Bootstrap JS e Popper.js (necessários) -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+	<script>
+		const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+		const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+	</script>
+	<!-- Biblioteca jQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!-- Biblioteca: Bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!-- Components: Global -->
+	<script rel="stylesheet" href="../../../src/components/badass.js"></script>
+	<script rel="stylesheet" href="../../../src/components/global/common/clipboard.js"></script>
+	<script rel="stylesheet" href="../../../src/components/global/common/popover.js"></script>
+	<script rel="stylesheet" href="../../../src/components/global/common/side-scrolling.js"></script>
+	<script rel="stylesheet" href="../../../src/components/global/common/tooltip.js"></script>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			// Inicializa tooltips
+			const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+			const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+
+			// Seleciona todos os botões do menu
+			const menuButtons = document.querySelectorAll('.select-menu-link');
+
+			// Função para atualizar interface baseado no jogo selecionado
+			function updateInterface(selectedGame) {
+				// Atualiza vídeos
+				const allVideos = document.querySelectorAll('.video');
+				allVideos.forEach(video => {
+					video.classList.add('hidden');
+					video.classList.remove('active');
+				});
+				const selectedVideo = document.querySelector(`.video-${selectedGame}`);
+				if (selectedVideo) {
+					selectedVideo.classList.remove('hidden');
+					selectedVideo.classList.add('active');
+				}
+
+				// Atualiza divs right
+				const allRightDivs = document.querySelectorAll('[class^="right-"]');
+				allRightDivs.forEach(div => {
+					div.classList.remove('active');
+					div.classList.add('hidden');
+				});
+				const selectedRightDiv = document.querySelector(`.right-${selectedGame}`);
+				if (selectedRightDiv) {
+					selectedRightDiv.classList.remove('hidden');
+					selectedRightDiv.classList.add('active');
+				}
+			}
+
+			menuButtons.forEach(button => {
+				button.addEventListener('click', function (e) {
+					e.preventDefault();
+
+					// Atualiza estados dos botões
+					menuButtons.forEach(btn => {
+						btn.classList.remove('active');
+						btn.classList.add('offline');
+						const img = btn.querySelector('.select-menu-icon');
+						if (img) {
+							img.classList.remove('active');
+						}
+					});
+
+					// Ativa o botão selecionado
+					this.classList.add('active');
+					this.classList.remove('offline');
+					const clickedImg = this.querySelector('.select-menu-icon');
+					if (clickedImg) {
+						clickedImg.classList.add('active');
+					}
+
+					// Atualiza toda a interface
+					const selectedGame = this.dataset.game;
+					updateInterface(selectedGame);
+				});
+			});
+		});
+	</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,4439 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<!-- Starting -->
+	<title>Re: Athena</title>
+	<meta name="description" content="Project Re: Athena">
+	<link rel="icon" type="image/x-icon" href="../../../../../../public/assets/common/logo/favicon.jpg">
+	<meta name="author" content='Victor "Vici" Pires'>
+	<meta name="keywords" content="design, web development, portfolio, games, genshin impact">
+	<!-- Meta -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- Styles: Global -->
+	<link rel="stylesheet" href="../../../../../styles/global/badass.css">
+	<link rel="stylesheet" href="../../../../../styles/global/athena-library.css">
+	<link rel="stylesheet" href="../../../../../styles/fonts/all.css">
+	<!-- Styles: Home.html -->
+	<link rel="stylesheet" href="../../../../../styles/gameSpecific/genshinImpact/views/desktop/home/all.css">
+	<link rel="stylesheet" href="../../../../../styles/gameSpecific/genshinImpact/material/characters.css">
+	<link rel="stylesheet" href="../../../../../styles/gameSpecific/genshinImpact/material/weapons.css">
+	<link rel="stylesheet" href="../../../../../styles/gameSpecific/genshinImpact/menu/menu-all.css">
+	<!-- Bootstrap + FontAwesome git init -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+	<header>
+		<!-- Menu Top -->
+		<nav id="mainnavbar">
+			<div class="menu-top">
+				<div class="menu-logo">
+					<div class="logo-text">
+						<span>explore</span>
+						<p>Athena</p>
+					</div>
+				</div>
+				<div class="menu menu-top-nav">
+					<ul>
+						<li class="nav-item">
+							<a class="nav-link" href="#scrollHome">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#scrollAbout">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#scrollCommunity">Community</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#scrollNews">News</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#scrollEvents">Events</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#scrollGuides">Guides</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#scrollContact">Contact</a>
+						</li>
+					</ul>
+				</div>
+				<div class="menu-profile">
+					<div class="menu-top-sign">
+						<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-register">
+							Sign up
+						</button>
+						<span>|</span>
+						<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-login">
+							Log in
+						</button>
+					</div>
+					<div class="menu-avatar menu-avatar-offline" data-bs-toggle="offcanvas" data-bs-target="#" aria-controls="">
+						<span class="profile-status position-absolute top-100 start-100 translate-middle">
+						</span>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Select Game Menu -->
+		<div class="select-menu-area">
+			<div class="select-menu-base">
+				<div class="select-menu-content">
+					<ul>
+						<!-- Genshin Impact -->
+						<li>
+							<a class="select-menu-link" href="" data-bs-toggle="tooltip" data-bs-placement="right"
+								data-bs-custom-class="select-menu-tooltip" data-bs-title="Genshin Impact">
+								<img class="select-menu-icon active" alt=""
+									src="../../../../../../public/assets/common/logo/logo-genshin.png">
+							</a>
+						</li>
+						<!-- Star Rail -->
+						<li>
+							<a class="select-menu-link offline" href="" data-bs-toggle="tooltip" data-bs-placement="right"
+								data-bs-custom-class="select-menu-tooltip offline" data-bs-title="Star Rail">
+								<img class="select-menu-icon" alt=""
+									src="../../../../../../public/assets/common/logo/logo-starrail.png">
+							</a>
+						</li>
+						<!-- Zenless Zone Zero -->
+						<li>
+							<a class="select-menu-link offline" href="" data-bs-toggle="tooltip" data-bs-placement="right"
+								data-bs-custom-class="select-menu-tooltip offline" data-bs-title="Zenless Zone Zero">
+								<img class="select-menu-icon" alt=""
+									src="../../../../../../public/assets/common/logo/logo-zenlesszonezero.png">
+							</a>
+						</li>
+						<!-- Whutering Waves -->
+						<li>
+							<a class="select-menu-link" href="" data-bs-toggle="tooltip" data-bs-placement="right"
+								data-bs-custom-class="select-menu-tooltip" data-bs-title="Whutering Waves">
+								<img class="select-menu-icon" alt=""
+									src="../../../../../../public/assets/common/logo/logo-whuteringwaves.png">
+							</a>
+						</li>
+						<!-- Reverse 1999 -->
+						<li>
+							<a class="select-menu-link" href="" data-bs-toggle="tooltip" data-bs-placement="right"
+								data-bs-custom-class="select-menu-tooltip" data-bs-title="Reverse 1999">
+								<img class="select-menu-icon" alt="" src="../../../../../../public/assets/common/logo/logo-reverse.png">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Modal Login -->
+	<div class="modal-login modal fade" id="modal-login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+		aria-labelledby="modal-loginLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered">
+			<div class="modal-login-header-area">
+				<p class="modal-login-header-text">login/</p>
+			</div>
+			<div class="modal-content">
+				<div class="modal-login modal-body">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 ps-0">
+								<div class="modal-login-left">
+									<div class="modal-login-left-background banner-inazuma-cl">
+										<div class="modal-login-left-char char-raiden">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 pe-0 ps-0">
+								<div class="modal-login-right">
+									<div class="d-flex justify-content-end align-items-center">
+										<div class="me-auto">
+										</div>
+										<div>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+									</div>
+									<div class="modal-login-area">
+										<div>
+											<h2 class="modal-login-title">Explore Athena</h2>
+										</div>
+										<form>
+											<div class="mb-2">
+												<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+													placeholder="youremail@here.com">
+											</div>
+											<div class="mb-2">
+												<input type="password" class="form-control" id="exampleInputPassword1"
+													placeholder="your password">
+											</div>
+											<div class="mb-3 form-check">
+												<input type="checkbox" class="form-check-input" id="LoginUserRemember">
+												<label class="form-check-label modal-login-remembertext" for="LoginUserRemember">Remember for 40
+													days</label>
+											</div>
+											<button type="submit" class="btn btn-primary w-100 mb-2">Sign in</button>
+										</form>
+										<div>
+											<button class="btn btn-secondary w-100">
+												<i class="bi bi-google"></i>
+												Sign in with Google
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal Register -->
+	<div class="modal-register modal fade" id="modal-register" data-bs-backdrop="static" data-bs-keyboard="false"
+		tabindex="-1" aria-labelledby="modal-registerLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered">
+			<div class="modal-register-header-area">
+				<p class="modal-register-header-text">sign up/</p>
+			</div>
+			<div class="modal-content">
+				<div class="modal-register modal-body">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 ps-0">
+								<div class="modal-register-left">
+									<div class="modal-register-left-background banner-inazuma-cl">
+										<div class="modal-register-left-char char-xiao">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 pe-0 ps-0">
+								<div class="modal-register-right">
+									<div class="d-flex justify-content-end align-items-center">
+										<div class="me-auto">
+										</div>
+										<div>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+									</div>
+									<div class="modal-register-area">
+										<div>
+											<h2 class="modal-register-title">Explore Athena</h2>
+										</div>
+										<form>
+											<div class="mb-2">
+												<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+													placeholder="youremail@here.com">
+											</div>
+											<div class="mb-2">
+												<input type="password" class="form-control" id="exampleInputPassword1"
+													placeholder="your password">
+											</div>
+											<div class="mb-2">
+												<input type="password" class="form-control" id="exampleInputPassword1"
+													placeholder="confirm password">
+											</div>
+											<div class="mb-3 form-check">
+												<input type="checkbox" class="form-check-input" id="RegisterUseremail">
+												<label class="form-check-label modal-register-remembertext" for="RegisterUseremail">
+													Would you like to receive news by e-mail?
+												</label>
+											</div>
+											<button type="submit" class="btn btn-primary w-100 mb-2">Sign up</button>
+										</form>
+										<div>
+											<button class="btn btn-secondary w-100">
+												<i class="bi bi-google"></i>
+												Sign up with Google
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Home -->
+	<main class="home-content" data-bs-spy="scroll" data-bs-target="#mainnavbar" data-bs-smooth-scroll="true">
+		<div class="effect-shadow" id="scrollHome">
+			<div class="banner">
+				<div class="banner-shadow-left"></div>
+				<video id="bg-mainVideo" autoplay loop muted class="bg-mainvideo"
+					src="../../../../../../public/assets/gameSpecific/genshinImpact/videos/RaidenGarden.mp4"></video>
+				<div class="banner-shadow-bottom">
+					<div class="container">
+						<div class="banner-content">
+							<div style="width: 100%; text-align: left;">
+								<div class="d-flex" style="height: 200px;">
+									<div class="banner-intro">
+										<h1 class="banner-name"><span>the Plane of Euthymia</span><br>Raiden Shogun</h1>
+										<div class="banner-hr"></div>
+										<p class="banner-quote">
+											"Her Excellency, the Almighty Narukami Ogosho, who promised the people of Inazuma an unchanging
+											Eternity."
+											<br>- The people of Inazuma.
+										</p>
+									</div>
+									<div class="banner-signature">
+										<img src="../src/assets/logo/signature-vertical.png" alt="">
+									</div>
+								</div>
+								<div class="banner-events">
+									<!-- Event: 1 -->
+									<div class="d-flex ms-auto">
+										<div class="banner-miniature banner-event event-inazuma active">
+											<div class="banner-event event-indigo">
+												<div class="banner-event event-char char-raiden">
+												</div>
+											</div>
+										</div>
+										<!-- Event: 2 -->
+										<div class="banner-miniature banner-event event-inazuma">
+											<div class="banner-event event-indigo">
+												<div class="banner-event event-char char-xiao">
+												</div>
+											</div>
+										</div>
+										<!-- Event: 3 -->
+										<div class="banner-miniature banner-event event-inazuma">
+											<div class="banner-event event-indigo">
+												<div class="banner-event event-char char-ganyu">
+												</div>
+											</div>
+										</div>
+										<!-- Event: 4 -->
+										<div class="banner-miniature banner-event event-inazuma">
+											<div class="banner-event event-indigo">
+												<div class="banner-event event-char char-yae">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Intro -->
+								<div class="banner-frame-title">
+									<p class="banner-number">01.</p>
+									<div class="d-block">
+										<h3 class="banner-title"><span>スポットライト</span>Spotlight</h3>
+									</div>
+								</div>
+								<div class="banner-frame">
+									<div class="banner-hr"></div>
+									<div class="banner-text">
+										<p>[...] The Raiden Shogun exists in two forms — Ei, her true identity, and the Shogun, a puppet
+											created by Ei to oversee Inazuma in her stead while she meditates in the Plane of Euthymia. This
+											puppet follows a set of directives programmed into her, which are extremely difficult to modify.
+											The Shogun is cold and stern in personality, even callous at times; she is limited in emotional
+											expression, has no likes and dislikes, and has no need for recreation. [...]</p>
+									</div>
+									<a class="banner-frame-link">
+										See More <span>↗</span></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content-page">
+			<div class="container">
+				<!-- About -->
+				<div class="about-content" id="scrollAbout">
+					<div class="caption-frame">
+						<p class="caption-number">02.</p>
+						<div class="d-block">
+							<h3 class="caption-title"><span>について</span><br>About</h3>
+						</div>
+					</div>
+					<div class="caption-hr"></div>
+					<video id="about-video" class="about-video" autoplay loop muted
+						src="../../../../../../public/assets/gameSpecific/genshinImpact/videos/Aether-and-Paimon.mp4"></video>
+					<div class="caption-intro">
+						<p>Welcome to
+							<span tabindex="0" class="athena-name" data-bs-placement="top" data-bs-toggle="popover"
+								data-bs-trigger="hover focus" data-bs-custom-class="caption-popover" data-bs-title="Project Athena"
+								data-bs-content="ⓘ Above all else, Athena is a project that combines my skills as a designer and programmer. You can find it in my portfolio.">
+								Athena</span> .
+						</p>
+						<p class="athena-quote">
+							Offer a few coins to the man in exchange for him revealing your true face.
+						</p>
+						<p>
+							Athena is a project created for the geek community, the ultimate guide where you will find everything
+							about the latest games. From tips to master your favorite characters to unbeatable strategies to
+							complete challenging events, Athena is here to transform your gaming experience.</p>
+						<p>
+							The games we cover include: <strong>Genshin Impact</strong>, <strong>Honkai Star Rail</strong>e
+							<strong>Zenless Zone Zero</strong>. Explore the world of gaming with Athena and become a
+							true master in your favorite titles.
+						</p>
+						<p>See my others
+							<a class="main-text-link" href="">projects <span>↗</span></a> or the
+							<a class="main-text-link" href="">history of Athena changes <span>↗</span></a>.
+						</p>
+					</div>
+					<div class="caption-signature">
+						<div class="caption-author author-vici"></div>
+						<div class="author-content">
+							<div class="author-name name-vici">Vici</div>
+							<div class="author-quote">Multimedia Designer, Front-End Developer, 3D Student and
+								Raiden main.</div>
+						</div>
+						<div class="author-link-area">
+							<a class="main-link icon-link" href="" target="_blank">
+								<i class="bi bi-person-fill"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- Community -->
+				<div class="community-content" id="scrollCommunity">
+					<div class="caption-frame">
+						<p class="caption-number">03.</p>
+						<div class="d-block">
+							<h3 class="caption-title"><span>について</span><br>Community</h3>
+						</div>
+					</div>
+					<div class="caption-hr"></div>
+					<div class="community-event-main-area">
+						<div class="row">
+							<div class="col-6">
+								<div class="community-main-event-area mt-4">
+									<div class="community-event-banner community-event-banner-pokelimpiadas"></div>
+									<div class="community-event-area mt-2">
+										<div class="d-flex justify-content-between align-items-center">
+											<div class="d-flex align-items-center">
+												<div class="community-event-profile community-event-profile-pokelimpiadas">
+												</div>
+												<div class="community-event-title">
+													<h5>Pokelimpiadas</h5>
+												</div>
+											</div>
+											<div class="community-event-available">
+												<div class="community-event-available-circle available-circle-yellow">
+												</div>
+												<div>
+													<p class="community-event-available-text available-text-yellow">Almost there</p>
+												</div>
+											</div>
+										</div>
+										<div class="d-flex align-items-center mt-2">
+											<div class="community-event-description">
+												<p>Sakura is a Genshin Impact duo tournament run by our stream community.</p>
+											</div>
+										</div>
+										<div class="d-flex justify-content-between">
+											<div class="community-event-dateandlocal">
+												<div class="community-event-date">
+													<p>27 Dec.– 01 Jan 2025</p>
+												</div>
+												<div class="community-event-local">
+													<p>https://www.twitch.tv/stellaartois</p>
+												</div>
+											</div>
+											<a href="" class="main-link">
+												Read More <span>↗</span>
+											</a>
+										</div>
+										<!--<div class="border-light border-indigo mt-4"></div>-->
+									</div>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="community-main-event-area mt-4">
+									<div class="community-event-banner community-event-banner-3sakura"></div>
+									<div class="community-event-area mt-2">
+										<div class="d-flex justify-content-between align-items-center">
+											<div class="d-flex align-items-center">
+												<div class="community-event-profile community-event-profile-3sakura">
+												</div>
+												<div class="community-event-title">
+													<h5>Sakura Cup Third edition</h5>
+												</div>
+											</div>
+											<div class="community-event-available">
+												<div class="community-event-available-circle available-circle-green">
+												</div>
+												<div>
+													<p class="community-event-available-text available-text-green">Available</p>
+												</div>
+											</div>
+										</div>
+										<div class="d-flex align-items-center mt-2">
+											<div class="community-event-description">
+												<p>Sakura is a Genshin Impact duo tournament run by our stream community.</p>
+											</div>
+										</div>
+										<div class="d-flex justify-content-between">
+											<div class="community-event-dateandlocal">
+												<div class="community-event-date">
+													<p>27 Dec.– 01 Jan 2025</p>
+												</div>
+												<div class="community-event-local">
+													<p>https://www.twitch.tv/stellaartois</p>
+												</div>
+											</div>
+											<a href="" class="main-link">
+												Read More <span>↗</span>
+											</a>
+										</div>
+										<!--<div class="border-light border-indigo mt-4"></div>-->
+									</div>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="community-main-event-area mt-4">
+									<div class="community-event-banner community-event-banner-2sakura"></div>
+									<div class="community-event-area mt-2">
+										<div class="d-flex justify-content-between align-items-center">
+											<div class="d-flex align-items-center">
+												<div class="community-event-profile community-event-profile-2sakura">
+												</div>
+												<div class="community-event-title">
+													<h5>Sakura Cup Second edition</h5>
+												</div>
+											</div>
+											<div class="community-event-available">
+												<div class="community-event-available-circle available-circle-red">
+												</div>
+												<div>
+													<p class="community-event-available-text available-text-red">Ended</p>
+												</div>
+											</div>
+										</div>
+										<div class="d-flex align-items-center mt-2">
+											<div class="community-event-description">
+												<p>Sakura is a Genshin Impact duo tournament run by our stream community.</p>
+											</div>
+										</div>
+										<div class="d-flex justify-content-between">
+											<div class="community-event-dateandlocal">
+												<div class="community-event-date">
+													<p>27 Dec.– 01 Jan 2025</p>
+												</div>
+												<div class="community-event-local">
+													<p>https://www.twitch.tv/stellaartois</p>
+												</div>
+											</div>
+											<a href="" class="main-link disabled">
+												Read More <span>↗</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="community-main-event-area mt-4">
+									<div class="community-event-banner community-event-banner-fuyunobudokai"></div>
+									<div class="community-event-area mt-2">
+										<div class="d-flex justify-content-between align-items-center">
+											<div class="d-flex align-items-center">
+												<div class="community-event-profile community-event-profile-fuyunobudokai">
+												</div>
+												<div class="community-event-title">
+													<h5>Fuyu no Budokai</h5>
+												</div>
+											</div>
+											<div class="community-event-available">
+												<div class="community-event-available-circle available-circle-green">
+												</div>
+												<div>
+													<p class="community-event-available-text available-text-green">Available</p>
+												</div>
+											</div>
+										</div>
+										<div class="d-flex align-items-center mt-2">
+											<div class="community-event-description">
+												<p>Sakura is a Genshin Impact duo tournament run by our stream community.</p>
+											</div>
+										</div>
+										<div class="d-flex justify-content-between">
+											<div class="community-event-dateandlocal">
+												<div class="community-event-date">
+													<p>27 Dec.– 01 Jan 2025</p>
+												</div>
+												<div class="community-event-local">
+													<p>https://www.twitch.tv/stellaartois</p>
+												</div>
+											</div>
+											<a href="" class="main-link">
+												Read More <span>↗</span>
+											</a>
+										</div>
+										<!--<div class="border-light border-indigo mt-4"></div>-->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="caption-signature">
+							<div>
+								<p class="fw-light m-0 m-0">See the collection of<br><span class="fw-bold">Community</span></p>
+							</div>
+							<div class="ms-auto">
+								<a href="" class="main-link">
+									See More <span>↗</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!--<h4 class="caption-title"><span>について</span><br>Popular streamers</h4>-->
+				</div>
+				<!-- News -->
+				<div class="news-content" id="scrollNews">
+					<div class="caption-frame">
+						<p class="caption-number">04.</p>
+						<div class="d-block">
+							<h3 class="caption-title"><span>について</span><br>News and Articles</h3>
+						</div>
+					</div>
+					<div class="caption-hr"></div>
+					<div class="caption-main-banner-area">
+						<div class="caption-main-banner-content">
+							<!-- News A -->
+							<div class="caption-main-banner-content-news-a">
+								<div class="caption-main-banner-description">
+									<div class="caption-main-banner-title">
+										<div class="caption-main-banner-title-icon banner-events-icon"></div>
+										<div>
+											<div class="caption-main-banner-title-name">Genshin Codes</div>
+											<div class="caption-main-banner-title-category">Event</div>
+										</div>
+									</div>
+									<div class="caption-main-banner-description-area">
+										<div class="caption-main-banner-description-subtitle">Spotlight:</div>
+										<p class="caption-main-banner-description-text">
+											An ancient Sumeru technology awakens in the depths of the rainforest, manifesting through curious
+											floating pixels and mysterious spheres. Academy researchers have discovered that these phenomena
+											are fragments of an ancient data system that has begun to merge with the local nature. The
+											Traveler is summoned to investigate this unique convergence between technology and nature.
+										</p>
+										<div class="d-flex">
+											<div class="banner-events-tag item-mora">
+												<span>Mora</span>
+											</div>
+											<div class="banner-events-tag item-primogem">
+												<span>Primogem</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="caption-main-banner-news caption-main-banner-news-a">
+									<div class="caption-main-banner-shadow"></div>
+								</div>
+							</div>
+							<!-- Carousel Banner -->
+							<!--<div class="caption-main-banner-carousel-items">
+								<div class="caption-main-banner-carousel-indicator-news active">1</div>
+								<div class="caption-main-banner-carousel-indicator-news">2</div>
+								<div class="caption-main-banner-carousel-indicator-news">3</div>
+								<div class="caption-main-banner-carousel-indicator-news">4</div>
+								<div class="caption-main-banner-carousel-indicator-news">5</div>
+							</div>-->
+						</div>
+					</div>
+					<div class="caption-subtitle caption-subtitle-indigo mt-3">
+						<span class="material-symbols-rounded pe-1">
+							stat_0
+							</span>
+						<p>Versions</p>
+					</div>
+					<div class="row mt-2">
+						<div class="col-md-4">
+							<div class="main-simple-frame simple-frame">
+								<div class="flag flag-news">
+									<div class="flag-content">
+										<span class="material-symbols-rounded">
+											newsmode
+										</span>
+									</div>
+								</div>
+								<div class="frame-header header-news-a">
+									<div class="frame-event-shadow">
+									</div>
+								</div>
+								<div class="simple-frame-area">
+									<div class="frame-description-area">
+										<h4 class="event-title">Version: 5.0</h4>
+										<p class="event-intro">
+											An ancient hydro energy source resurfaces in Fontaine, creating water
+											mirrors that multiply reality. Navigate through a world where each action is reflected in
+											different aquatic dimensions, solving puzzles that require synchronization with your
+											reflections. Collect Drops of Eternity to unlock a new water-themed glider skin.
+										</p>
+										<a class="main-link main-link-outline">Read More <span>↗</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="main-simple-frame simple-frame">
+								<div class="flag flag-news">
+									<div class="flag-content">
+										<span class="material-symbols-rounded">
+											newsmode
+										</span>
+									</div>
+								</div>
+								<div class="frame-header header-news-b">
+									<div class="frame-event-shadow">
+									</div>
+								</div>
+								<div class="simple-frame-area">
+									<div class="frame-description-area">
+										<h4 class="event-title">Version: 4.9</h4>
+										<p class="event-intro">
+											An ancient hydro energy source resurfaces in Fontaine, creating water
+											mirrors that multiply reality. Navigate through a world where each action is reflected in
+											different aquatic dimensions, solving puzzles that require synchronization with your
+											reflections. Collect Drops of Eternity to unlock a new water-themed glider skin.
+										</p>
+										<a class="main-link main-link-outline">Read More <span>↗</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="main-simple-frame simple-frame">
+								<div class="flag flag-news">
+									<div class="flag-content">
+										<span class="material-symbols-rounded">
+											newsmode
+										</span>
+									</div>
+								</div>
+								<div class="frame-header header-news-c">
+									<div class="frame-event-shadow">
+									</div>
+								</div>
+								<div class="simple-frame-area">
+									<div class="frame-description-area">
+										<h4 class="event-title">Version: 4.8</h4>
+										<p class="event-intro">
+											An ancient hydro energy source resurfaces in Fontaine, creating water
+											mirrors that multiply reality. Navigate through a world where each action is reflected in
+											different aquatic dimensions, solving puzzles that require synchronization with your
+											reflections. Collect Drops of Eternity to unlock a new water-themed glider skin.
+										</p>
+										<a class="main-link main-link-outline">Read More <span>↗</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="caption-subtitle caption-subtitle-gold mt-3">
+						<span class="material-symbols-rounded pe-1">
+							stat_0
+							</span>
+						<p>Top Articles</p>
+					</div>
+					<div class="simple-frame-horizontal">
+						<div class="flag flag-news">
+							<div class="flag-content">
+								<span class="material-symbols-rounded">
+									newsmode
+								</span>
+							</div>
+						</div>
+						<div class="frame-horizontal-header header-article-a"></div>
+						<div class="frame-horizontal-description-area">
+							<span class="article-date">27 December 2024</span>
+							<h4 class="event-title">Ultimate Guide: <br>Mastering Combat in Genshin Impact</h4>
+							<p class="event-intro">
+								Dive into the vibrant universe of Teyvat with our comprehensive combat guides! Learn the best battle techniques, devastating elemental combinations, and advanced strategies to maximize your characters' potential. From beginner to veteran, discover how to master every aspect of Genshin Impact's dynamic combat system. Unlock the full power of bows, catalysts, and swords while exploring the unique mechanics that make each character shine in battle!
+							</p>
+							<div class="article-signature">
+								<span class="article-tag">Guide | 1hr 3min</span>
+								<div class="article-hr"></div>
+							</div>
+						</div>
+						<div class="frame-horizontal-action-area">
+							<div class="frame-horizontal-action">
+								<a href="" class="main-link main-link-like mb-2"><span class="material-symbols-rounded pe-2">thumb_up</span>Support</a>
+								<a href="" class="main-link main-link-favorite"><span class="material-symbols-rounded pe-2">favorite</span>Favorite</a>
+								<hr>
+								<a href="" class="main-link">Read More <span>↗</span></a>
+							</div>
+						</div>
+					</div>
+					<div class="simple-frame-horizontal">
+						<div class="flag flag-news">
+							<div class="flag-content">
+								<span class="material-symbols-rounded">
+									newsmode
+								</span>
+							</div>
+						</div>
+						<div class="frame-horizontal-header header-article-b"></div>
+						<div class="frame-horizontal-description-area">
+							<span class="article-date">27 December 2024</span>
+							<h4 class="event-title">Tea Time in the Library:<br>A Sweet Break</h4>
+							<p class="event-intro">
+								In a cozy corner of an ancient library, a lovely scene unfolds between books and treats. The warm ambiance is enhanced by golden light filtering through the space, while characters enjoy a relaxed moment with cakes and tea, surrounded by stacked books and decor that blends classical elements with playful touches, creating a perfectly comfortable atmosphere for a relaxing break.
+							</p>
+							<div class="article-signature">
+								<span class="article-tag">Guide | 1hr 3min</span>
+								<div class="article-hr"></div>
+							</div>
+						</div>
+						<div class="frame-horizontal-action-area">
+							<div class="frame-horizontal-action">
+								<a href="" class="main-link main-link-like mb-2"><span class="material-symbols-rounded pe-2">thumb_up</span>Support</a>
+								<a href="" class="main-link main-link-favorite"><span class="material-symbols-rounded pe-2">favorite</span>Favorite</a>
+								<hr>
+								<a href="" class="main-link">Read More <span>↗</span></a>
+							</div>
+						</div>
+					</div>
+					<div class="simple-frame-horizontal">
+						<div class="flag flag-news">
+							<div class="flag-content">
+								<span class="material-symbols-rounded">
+									newsmode
+								</span>
+							</div>
+						</div>
+						<div class="frame-horizontal-header header-article-c"></div>
+						<div class="frame-horizontal-description-area">
+							<span class="article-date">27 December 2024</span>
+							<h4 class="event-title">The Study Café:<br>Moments of Reflection in Teyvat</h4>
+							<p class="event-intro">
+								In an elegant and refined atmosphere, two scholars share a quiet moment in Fontaine's luxurious library. Between cups of tea and important documents, the scene captures the essence of the pursuit of knowledge, with its elaborate architectural details and soft lighting creating a perfect environment for contemplation and research.
+							</p>
+							<div class="article-signature">
+								<span class="article-tag">Guide | 1hr 3min</span>
+								<div class="article-hr"></div>
+							</div>
+						</div>
+						<div class="frame-horizontal-action-area">
+							<div class="frame-horizontal-action">
+								<a href="" class="main-link main-link-like mb-2"><span class="material-symbols-rounded pe-2">thumb_up</span>Support</a>
+								<a href="" class="main-link main-link-favorite"><span class="material-symbols-rounded pe-2">favorite</span>Favorite</a>
+								<hr>
+								<a href="" class="main-link">Read More <span>↗</span></a>
+							</div>
+						</div>
+					</div>
+					<div class="caption-signature">
+						<div>
+							<p class="fw-light m-0 m-0">See the collection of<br><span class="fw-bold">Events</span></p>
+						</div>
+						<div class="ms-auto">
+							<a href="" class="main-link">
+								See More <span>↗</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- Events -->
+				<div class="events-content" id="scrollEvents">
+					<div class="caption-frame">
+						<p class="caption-number">05.</p>
+						<div class="d-block">
+							<h3 class="caption-title"><span>について</span><br>Official events</h3>
+						</div>
+					</div>
+					<div class="caption-hr"></div>
+					<div class="caption-main-banner-area">
+						<div class="caption-main-banner-content">
+							<!-- Event A -->
+							<div class="caption-main-banner-content-events-a">
+								<div class="caption-main-banner-description">
+									<div class="caption-main-banner-title">
+										<div class="caption-main-banner-title-icon banner-events-icon"></div>
+										<div>
+											<div class="caption-main-banner-title-name">Wild Code</div>
+											<div class="caption-main-banner-title-category">Event</div>
+										</div>
+									</div>
+									<div class="caption-main-banner-description-area">
+										<div class="caption-main-banner-description-subtitle">Spotlight:</div>
+										<p class="caption-main-banner-description-text">
+											An ancient Sumeru technology awakens in the depths of the rainforest, manifesting through curious
+											floating pixels and mysterious spheres. Academy researchers have discovered that these phenomena
+											are fragments of an ancient data system that has begun to merge with the local nature. The
+											Traveler is summoned to investigate this unique convergence between technology and nature.
+										</p>
+										<div class="d-flex">
+											<div class="banner-events-tag item-mora">
+												<span>Mora</span>
+											</div>
+											<div class="banner-events-tag item-primogem">
+												<span>Primogem</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="caption-main-banner-events caption-main-banner-events-a">
+									<div class="caption-main-banner-shadow"></div>
+								</div>
+							</div>
+							<!-- Event B -->
+							<div class="caption-main-banner-content-events-b">
+								<div class="caption-main-banner-description">
+									<div class="caption-main-banner-title">
+										<div class="caption-main-banner-title-icon banner-events-icon"></div>
+										<div>
+											<div class="caption-main-banner-title-name">Ocean Echoes</div>
+											<div class="caption-main-banner-title-category">Event</div>
+										</div>
+									</div>
+									<div class="caption-main-banner-description-area">
+										<div class="caption-main-banner-description-subtitle">Spotlight:</div>
+										<p class="caption-main-banner-description-text">
+											An ancient hydro energy source resurfaces in Fontaine, creating water mirrors that multiply
+											reality. Navigate through a world where each action is reflected in different aquatic dimensions,
+											solving puzzles that require synchronization with your reflections. Collect Drops of Eternity to
+											unlock a new water-themed glider skin.
+										</p>
+										<div class="d-flex">
+											<div class="banner-events-tag item-mora">
+												<span>Mora</span>
+											</div>
+											<div class="banner-events-tag item-primogem">
+												<span>Primogem</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="caption-main-banner-events caption-main-banner-events-b">
+									<div class="caption-main-banner-shadow"></div>
+								</div>
+							</div>
+							<!-- Event C -->
+							<div class="caption-main-banner-content-events-c">
+								<div class="caption-main-banner-description">
+									<div class="caption-main-banner-title">
+										<div class="caption-main-banner-title-icon banner-events-icon"></div>
+										<div>
+											<div class="caption-main-banner-title-name">Deep Slumber</div>
+											<div class="caption-main-banner-title-category">Event</div>
+										</div>
+									</div>
+									<div class="caption-main-banner-description-area">
+										<div class="caption-main-banner-description-subtitle">Spotlight:</div>
+										<p class="caption-main-banner-description-text">
+											An ancient curse awakens in Liyue, causing its inhabitants to fall into a deep and mysterious
+											sleep. Reports indicate that the phenomenon began after the discovery of an ancestral chamber in
+											the depths of Mt. Tianheng's Mines. The Qixing urgently requests the Traveler's help to
+											investigate the origin of this curse and awaken the affected citizens.
+										</p>
+										<div class="d-flex">
+											<div class="banner-events-tag item-mora">
+												<span>Mora</span>
+											</div>
+											<div class="banner-events-tag item-primogem">
+												<span>Primogem</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="caption-main-banner-events caption-main-banner-events-c">
+									<div class="caption-main-banner-shadow"></div>
+								</div>
+							</div>
+							<!-- Event D -->
+							<div class="caption-main-banner-content-events-d">
+								<div class="caption-main-banner-description">
+									<div class="caption-main-banner-title">
+										<div class="caption-main-banner-title-icon banner-events-icon"></div>
+										<div>
+											<div class="caption-main-banner-title-name">Flames of the Abyss</div>
+											<div class="caption-main-banner-title-category">Event</div>
+										</div>
+									</div>
+									<div class="caption-main-banner-description-area">
+										<div class="caption-main-banner-description-subtitle">Spotlight:</div>
+										<p class="caption-main-banner-description-text">
+											An ancient curse awakens in the depths of Teyvat, releasing crimson flames that begin to corrupt
+											the land. The Traveler must dive into special domains where the abyssal flames grow stronger,
+											facing corrupted versions of familiar enemies. Defeat the adversaries to collect Crimson Essence,
+											necessary to forge protective talismans and prevent the corruption's advance.
+										</p>
+										<div class="d-flex">
+											<div class="banner-events-tag item-mora">
+												<span>Mora</span>
+											</div>
+											<div class="banner-events-tag item-primogem">
+												<span>Primogem</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="caption-main-banner-events caption-main-banner-events-d">
+									<div class="caption-main-banner-shadow"></div>
+								</div>
+							</div>
+							<!-- Event E -->
+							<div class="caption-main-banner-content-events-e">
+								<div class="caption-main-banner-description">
+									<div class="caption-main-banner-title">
+										<div class="caption-main-banner-title-icon banner-events-icon"></div>
+										<div>
+											<div class="caption-main-banner-title-name">Garden of Memories</div>
+											<div class="caption-main-banner-title-category">Event</div>
+										</div>
+									</div>
+									<div class="caption-main-banner-description-area">
+										<div class="caption-main-banner-description-subtitle">Spotlight:</div>
+										<p class="caption-main-banner-description-text">
+											In the flowery fields of Mondstadt, a mysterious gardener appears cultivating golden flowers that
+											seem to hold memories of ancient times. The Traveler is invited to explore this enchanted garden,
+											where each harvested flower reveals fragments of the past. Participate in special collection
+											challenges, interact with flower spirits, and unravel the secrets kept in this magical field.
+										</p>
+										<div class="d-flex">
+											<div class="banner-events-tag item-mora">
+												<span>Mora</span>
+											</div>
+											<div class="banner-events-tag item-primogem">
+												<span>Primogem</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="caption-main-banner-events caption-main-banner-events-e">
+									<div class="caption-main-banner-shadow"></div>
+								</div>
+							</div>
+							<!-- Carousel Banner -->
+							<div class="caption-main-banner-carousel-items">
+								<div class="caption-main-banner-carousel-indicator-events active">1</div>
+								<div class="caption-main-banner-carousel-indicator-events">2</div>
+								<div class="caption-main-banner-carousel-indicator-events">3</div>
+								<div class="caption-main-banner-carousel-indicator-events">4</div>
+								<div class="caption-main-banner-carousel-indicator-events">5</div>
+							</div>
+						</div>
+					</div>
+					<div class="row mt-3">
+						<div class="col-md-6">
+							<div class="caption-subtitle caption-subtitle-indigo mb-2">
+								<span class="material-symbols-rounded pe-1">
+									stat_0
+									</span>
+								<p>Main Event</p>
+							</div>
+							<!-- Main Event -->
+							<div class="main-simple-frame simple-frame">
+								<div class="flag flag-event">
+									<div class="flag-content">
+										<span class="material-symbols-rounded">
+											comedy_mask
+										</span>
+									</div>
+								</div>
+								<div class="frame-header header-event-a">
+									<div class="frame-event-shadow">
+									</div>
+								</div>
+								<div class="simple-frame-area">
+									<div class="frame-description-area">
+										<h4 class="event-title">Wild Code</h4>
+										<p class="event-intro">
+											An ancient Sumeru technology awakens in the depths of the rainforest, manifesting through curious floating pixels and mysterious spheres. Academy researchers have discovered that these phenomena are fragments of an ancient data system that has begun to merge with the local nature. The Traveler is summoned to investigate this
+										</p>
+										<a class="main-link main-link-outline">Read More <span>↗</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="caption-subtitle caption-subtitle-gray mb-2">
+								<span class="material-symbols-rounded pe-1">
+									stat_0
+									</span>
+								<p>Secundary Events</p>
+							</div>
+							<div class="event-scroll side-scroll">
+								<!-- Event B -->
+								<div class="simple-frame simple-frame-event-b">
+									<div class="flag flag-event">
+										<div class="flag-content">
+											<span class="material-symbols-rounded">
+												comedy_mask
+											</span>
+										</div>
+									</div>
+									<div class="frame-header header-event-b">
+										<div class="frame-event-shadow">
+										</div>
+									</div>
+									<div class="simple-frame-area">
+										<div class="frame-description-area">
+											<h4 class="event-title">Ocean<br>Echoes</h4>
+											<p class="event-intro">
+												An ancient hydro energy source resurfaces in Fontaine, creating water
+												mirrors that multiply reality. Navigate through a world where each action is reflected in
+												different aquatic dimensions, solving puzzles that require synchronization with your
+												reflections. Collect Drops of Eternity to unlock a new water-themed glider skin.
+											</p>
+											<a class="main-link main-link-outline">Read More <span>↗</span></a>
+										</div>
+									</div>
+								</div>
+								<!-- Event C -->
+								<div class="simple-frame simple-frame-event-c">
+									<div class="flag flag-event">
+										<div class="flag-content">
+											<span class="material-symbols-rounded">
+												comedy_mask
+											</span>
+										</div>
+									</div>
+									<div class="frame-header header-event-c">
+										<div class="frame-event-shadow">
+										</div>
+									</div>
+									<div class="simple-frame-area">
+										<div class="frame-description-area">
+											<h4 class="event-title">Deep<br>Slumber</h4>
+											<p class="event-intro">
+												An ancient curse awakens in Liyue, causing its inhabitants to fall into a deep and mysterious sleep. Reports indicate that the phenomenon began after the discovery of an ancestral chamber in the depths of Mt. Tianheng's Mines. The Qixing urgently requests the Traveler's help to investigate the origin of this curse and awaken the
+											</p>
+											<a class="main-link main-link-outline">Read More <span>↗</span></a>
+										</div>
+									</div>
+								</div>
+								<!-- Event D -->
+								<div class="simple-frame simple-frame-event-d">
+									<div class="flag flag-event">
+										<div class="flag-content">
+											<span class="material-symbols-rounded">
+												comedy_mask
+											</span>
+										</div>
+									</div>
+									<div class="frame-header header-event-d">
+										<div class="frame-event-shadow">
+										</div>
+									</div>
+									<div class="simple-frame-area">
+										<div class="frame-description-area">
+											<h4 class="event-title">Flames<br>of the Abyss</h4>
+											<p class="event-intro">
+												An ancient curse awakens in the depths of Teyvat, releasing crimson flames that begin to corrupt the land. The Traveler must dive into special domains where the abyssal flames grow stronger, facing corrupted versions of familiar enemies. Defeat the adversaries to collect Crimson Essence, necessary to forge protective talismans and
+											</p>
+											<a class="main-link main-link-outline">Read More <span>↗</span></a>
+										</div>
+									</div>
+								</div>
+								<!-- Event E -->
+								<div class="simple-frame simple-frame-event-e">
+									<div class="flag flag-event">
+										<div class="flag-content">
+											<span class="material-symbols-rounded">
+												comedy_mask
+											</span>
+										</div>
+									</div>
+									<div class="frame-header header-event-e">
+										<div class="frame-event-shadow">
+										</div>
+									</div>
+									<div class="simple-frame-area">
+										<div class="frame-description-area">
+											<h4 class="event-title">Garden<br>of Memories</h4>
+											<p class="event-intro">
+												In the flowery fields of Mondstadt, a mysterious gardener appears cultivating golden flowers that seem to hold memories of ancient times. The Traveler is invited to explore this enchanted garden, where each harvested flower reveals fragments of the past. Participate in special collection challenges, interact with flower spirits, and unravel the
+											</p>
+											<a class="main-link main-link-outline">Read More <span>↗</span></a>
+										</div>
+									</div>
+								</div>
+								<!-- Event F -->
+								<div class="simple-frame simple-frame-event-f">
+									<div class="flag flag-event">
+										<div class="flag-content">
+											<span class="material-symbols-rounded">
+												comedy_mask
+											</span>
+										</div>
+									</div>
+									<div class="frame-header header-event-f">
+										<div class="frame-event-shadow">
+										</div>
+									</div>
+									<div class="simple-frame-area">
+										<div class="frame-description-area">
+											<h4 class="event-title">Silken Dreams: The Seamstress of Liyue</h4>
+											<p class="event-intro">
+												A mysterious seamstress named Lin Huaying has arrived at Liyue Harbor, bringing with her the ancient art of imperial tailoring. Specialized in ceremonial garments, she seeks apprentices to help her create a special collection for the upcoming Liyue Moon Festival.
+											</p>
+											<a class="main-link main-link-outline">Read More <span>↗</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="caption-signature">
+						<div>
+							<p class="fw-light m-0 m-0">See the collection of<br><span class="fw-bold">Events</span></p>
+						</div>
+						<div class="ms-auto">
+							<a href="" class="main-link">
+								See More <span>↗</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--  Guides -->
+				<div class="guides-content" id="scrollGuides">
+					<div class="caption-frame">
+						<p class="caption-number">06.</p>
+						<div class="d-block">
+							<h3 class="caption-title"><span>について</span><br>Guides</h3>
+						</div>
+					</div>
+					<div class="caption-hr"></div>
+					<div class="caption-intro">
+						<p></p>
+					</div>
+					<div class="char-main-banner-area char-clorinde">
+						<div class="char-tag-new">New</div>
+						<div class="char-main-banner-content">
+							<div class="char-main-banner-description" style=" z-index: 999;">
+								<div class="char-main-banner-title">
+									<div class="icon-element element-electro"></div>
+									<div class="ms-2">
+										<h4 class="char-main-banner-name">Clorinde</h4>
+										<div class="char-stars">
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+										</div>
+									</div>
+								</div>
+								<img id="videoCover" alt="Video Cover" class="char-main-banner-cover"
+									src="../../../../../../public/assets/gameSpecific/genshinImpact/videos/char-clorinde-intro.jpg">
+								<div class="play-button" id="playButton">
+									<i class="bi bi-play-fill"></i>
+								</div>
+								<video id="bgVideo" class="char-main-banner-video" loop muted>
+									<source
+										src="../../../../../../public/assets/gameSpecific/genshinImpact/videos/char-clorinde-intro.jpg"
+										type="video/mp4">
+								</video>
+							</div>
+							<div class="char-main-banner-background banner-inazuma">
+								<div class="char-main-banner-shadow-left">
+									<div class="char-effect event-indigo">
+										<div class="char-main-banner char-clorinde"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<!-- Baizhu -->
+						<div class="col-md-3 guides-card-char" id="card-baizhu">
+							<div class="guides-area-char">
+								<div class="flag flag-char">
+									<div class="flag-content">
+										<i class="bi bi-person-fill"></i>
+									</div>
+								</div>
+								<div class="guides-char-main-area">
+									<div class="guides-description-area">
+										<div class="guides-header-area">
+											<div class="guides-header-char face-baizhu">
+											</div>
+											<div class="guides-header-main-info">
+												<div class="guides-header-main-name">
+													Baizhu
+												</div>
+												<div class="guides-header-main-title">
+													Owner of Bubu Pharmacy
+												</div>
+											</div>
+										</div>
+										<div class="guides-description-text-area">
+											<div class="char-banner-text">Spotlight:</div>
+											<p class="guides-description-text">
+												Baizhu is a Dendro catalyst user who heals allies and creates protective shields. His skills
+												focus on regenerating HP and providing team support, making him essential for team
+												survivability.
+											</p>
+										</div>
+										<div class="guides-description-info-area">
+											<div class="row w-100">
+												<div class="col">
+													<div class="char-banner-element">
+														<div class="char-banner-text">
+															Role:
+														</div>
+														<div class="char-banner-element-content">
+															<p>Healer</p>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="d-flex" style="min-width: 88px;">
+														<div class="char-banner-rarity me-auto">
+															<div class="char-banner-text">
+																Weapon:
+															</div>
+															<div class="char-banner-weapon-content char-banner-weapon">
+																<div class="icon-weapon weapon-catalyst">
+																</div>
+																<p>Catalyst</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row w-100">
+												<div class="col">
+													<div class="char-banner-rarity me-auto">
+														<div class="char-banner-text">
+															Rarity:
+														</div>
+														<div class="char-stars">
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="char-banner-element">
+														<div class="char-banner-text">
+															Element:
+														</div>
+														<div class="char-banner-element-content">
+															<div class="icon-element element-dendro">
+															</div>
+															<p>Dendro</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="guides-lore-area hidden">
+										<div class="guides-lore-text-area">
+											<div class="guides-lore-title">
+												Story Summary
+											</div>
+											<p class="guides-lore-text">
+												Baizhu is the owner of Bubu Pharmacy in Liyue, known for his vast knowledge of herbal
+												medicine and his unique approach to healthcare. Despite his frail health, Baizhu dedicates
+												himself to finding a cure for his chronic illness, driven by a deep compassion for others
+												suffering from ailments. He is always accompanied by his mysterious talking snake,
+												Changsheng, who seems to have a profound connection with him. Baizhu's calm demeanor and
+												enigmatic aura make him a respected figure in Liyue, where people seek his expertise and
+												unconventional treatments. His journey is one of perseverance and hope, as he tirelessly
+												searches for remedies that could heal not only himself but also countless others.
+												<span>[...]</span>
+											</p>
+										</div>
+									</div>
+									<div class="guides-charview-area card-baizhu hidden">
+										<div class="guides-charview-shadow"></div>
+									</div>
+								</div>
+								<div class="guides-link-area">
+									<div class="d-flex align-content-center">
+										<div class="guides-link-left me-auto"></div>
+										<div class="guides-link-right ms-auto"></div>
+									</div>
+								</div>
+								<div class="guides-action-area">
+									<div class="d-flex me-auto">
+										<div class="btn-group" role="group" aria-label="">
+											<input type="radio" class="btn-check" name="btnradio-baizhu" id="btndescription-baizhu"
+												autocomplete="off" checked>
+											<label class="btn btn-outline-primary" for="btndescription-baizhu">
+												<i class="fa-solid fa-square-poll-horizontal"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-baizhu" id="btnlore-baizhu"
+												autocomplete="off">
+											<label class="btn btn-outline-primary" for="btnlore-baizhu">
+												<i class="fa-solid fa-book"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-baizhu" id="btncharview-baizhu"
+												autocomplete="off">
+											<label class="btn btn-outline-primary" for="btncharview-baizhu">
+												<i class="fa-solid fa-eye"></i>
+											</label>
+										</div>
+									</div>
+									<a class="main-link main-link-outline">See More <span>↗</span></a>
+								</div>
+							</div>
+						</div>
+						<!-- Beidou -->
+						<div class="col-md-3 guides-card-char" id="card-beidou">
+							<div class="guides-area-char">
+								<div class="flag flag-char">
+									<div class="flag-content">
+										<i class="bi bi-person-fill"></i>
+									</div>
+								</div>
+								<div class="guides-char-main-area">
+									<div class="guides-description-area">
+										<div class="guides-header-area">
+											<div class="guides-header-char face-beidou">
+											</div>
+											<div class="guides-header-main-info">
+												<div class="guides-header-main-name">
+													Beidou
+												</div>
+												<div class="guides-header-main-title">
+													Queen of the Crux Fleet
+												</div>
+											</div>
+										</div>
+										<div class="guides-description-text-area">
+											<div class="char-banner-text">Spotlight:</div>
+											<p class="guides-description-text">
+												Beidou is an Electro claymore user specializing in counterattacks and AoE damage. Her
+												abilities enhance her strength and resistance, making her a powerful front-line fighter.
+											</p>
+										</div>
+										<div class="guides-description-info-area">
+											<div class="row w-100">
+												<div class="col">
+													<div class="char-banner-element">
+														<div class="char-banner-text">
+															Role:
+														</div>
+														<div class="char-banner-element-content">
+															<p>Main Dps</p>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="d-flex" style="min-width: 88px;">
+														<div class="char-banner-rarity me-auto">
+															<div class="char-banner-text">
+																Weapon:
+															</div>
+															<div class="char-banner-weapon-content char-banner-weapon">
+																<div class="icon-weapon weapon-claymore">
+																</div>
+																<p>Claymore</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row w-100">
+												<div class="col">
+													<div class="char-banner-rarity me-auto">
+														<div class="char-banner-text">
+															Rarity:
+														</div>
+														<div class="char-stars">
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star"></i>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="char-banner-element">
+														<div class="char-banner-text">
+															Element:
+														</div>
+														<div class="char-banner-element-content">
+															<div class="icon-element element-electro">
+															</div>
+															<p>Electro</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="guides-lore-area hidden">
+										<div class="guides-lore-text-area">
+											<div class="guides-lore-title">
+												Story Summary
+											</div>
+											<p class="guides-lore-text">
+												Beidou is the fearless captain of the Crux Fleet, known throughout Liyue for her strength,
+												bravery, and seafaring skills. She commands a crew of loyal sailors and navigates the
+												treacherous seas with ease. Beidou's reputation as a powerful warrior is matched only by her
+												free-spirited nature and love for adventure. Despite her rough exterior, she has a deep
+												sense of justice and often stands up for the underdog. Beidou's journey is one of defying
+												expectations and challenging the limits of what a human can achieve, all while enjoying the
+												thrill of the open sea and the camaraderie of her crew.
+											</p>
+										</div>
+									</div>
+									<div class="guides-charview-area card-beidou hidden">
+										<div class="guides-charview-shadow"></div>
+									</div>
+								</div>
+								<div class="guides-link-area">
+									<div class="d-flex align-content-center">
+										<div class="guides-link-left me-auto"></div>
+										<div class="guides-link-right ms-auto"></div>
+									</div>
+								</div>
+								<div class="guides-action-area">
+									<div class="d-flex me-auto">
+										<div class="btn-group" role="group" aria-label="">
+											<input type="radio" class="btn-check" name="btnradio-beidou" id="btndescription-beidou"
+												autocomplete="off" checked>
+											<label class="btn btn-outline-primary" for="btndescription-beidou">
+												<i class="fa-solid fa-square-poll-horizontal"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-beidou" id="btnlore-beidou"
+												autocomplete="off">
+											<label class="btn btn-outline-primary" for="btnlore-beidou">
+												<i class="fa-solid fa-book"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-beidou" id="btncharview-beidou"
+												autocomplete="off">
+											<label class="btn btn-outline-primary" for="btncharview-beidou">
+												<i class="fa-solid fa-eye"></i>
+											</label>
+										</div>
+									</div>
+									<a class="main-link main-link-outline">See More <span>↗</span></a>
+								</div>
+							</div>
+						</div>
+						<!-- Eula -->
+						<div class="col-md-3 guides-card-char" id="card-eula">
+							<div class="guides-area-char">
+								<div class="flag flag-char">
+									<div class="flag-content">
+										<i class="bi bi-person-fill"></i>
+									</div>
+								</div>
+								<div class="guides-char-main-area">
+									<div class="guides-description-area">
+										<div class="guides-header-area">
+											<div class="guides-header-char face-eula">
+											</div>
+											<div class="guides-header-main-info">
+												<div class="guides-header-main-name">
+													Eula
+												</div>
+												<div class="guides-header-main-title">
+													Spindrift Knight
+												</div>
+											</div>
+										</div>
+										<div class="guides-description-text-area">
+											<div class="char-banner-text">Spotlight:</div>
+											<p class="guides-description-text">
+												Eula is a Cryo claymore user focused on physical damage and powerful combos. Her skills
+												grant shields and unleash massive Cryo attacks, making her a formidable damage dealer.
+											</p>
+										</div>
+										<div class="guides-description-info-area">
+											<div class="row w-100">
+												<div class="col">
+													<div class="char-banner-element">
+														<div class="char-banner-text">
+															Role:
+														</div>
+														<div class="char-banner-element-content">
+															<p>Main DPS</p>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="d-flex" style="min-width: 88px;">
+														<div class="char-banner-rarity me-auto">
+															<div class="char-banner-text">
+																Weapon:
+															</div>
+															<div class="char-banner-weapon-content char-banner-weapon">
+																<div class="icon-weapon weapon-claymore">
+																</div>
+																<p>Claymore</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row w-100">
+												<div class="col">
+													<div class="char-banner-rarity me-auto">
+														<div class="char-banner-text">
+															Rarity:
+														</div>
+														<div class="char-stars">
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="char-banner-element">
+														<div class="char-banner-text">
+															Element:
+														</div>
+														<div class="char-banner-element-content">
+															<div class="icon-element element-cryo">
+															</div>
+															<p>Cryo</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="guides-lore-area hidden">
+										<div class="guides-lore-text-area">
+											<div class="guides-lore-title">
+												Story Summary
+											</div>
+											<p class="guides-lore-text">
+												Eula is the Spindrift Knight and the captain of the Reconnaissance Company of the Knights of
+												Favonius in Mondstadt. Born into the infamous Lawrence Clan, which was once known for its
+												oppressive rule, Eula has dedicated her life to redeeming her family name. She is a
+												formidable warrior with a reputation for her cold and aloof demeanor. Despite her
+												aristocratic background, Eula has earned the respect of her comrades through her hard work,
+												skill, and unwavering sense of justice. Her journey is one of overcoming prejudice and
+												proving that one's lineage does not define their character.
+											</p>
+										</div>
+									</div>
+									<div class="guides-charview-area card-eula hidden">
+										<div class="guides-charview-shadow"></div>
+									</div>
+								</div>
+								<div class="guides-link-area">
+									<div class="d-flex align-content-center">
+										<div class="guides-link-left me-auto"></div>
+										<div class="guides-link-right ms-auto"></div>
+									</div>
+								</div>
+								<div class="guides-action-area">
+									<div class="d-flex me-auto">
+										<div class="btn-group" role="group" aria-label="">
+											<input type="radio" class="btn-check" name="btnradio-eula" id="btndescription-eula"
+												autocomplete="off" checked>
+											<label class="btn btn-outline-primary" for="btndescription-eula">
+												<i class="fa-solid fa-square-poll-horizontal"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-eula" id="btnlore-eula" autocomplete="off">
+											<label class="btn btn-outline-primary" for="btnlore-eula">
+												<i class="fa-solid fa-book"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-eula" id="btncharview-eula"
+												autocomplete="off">
+											<label class="btn btn-outline-primary" for="btncharview-eula">
+												<i class="fa-solid fa-eye"></i>
+											</label>
+										</div>
+									</div>
+									<a class="main-link main-link-outline">See More <span>↗</span></a>
+								</div>
+							</div>
+						</div>
+						<!-- Hutao -->
+						<div class="col-md-3 guides-card-char" id="card-hutao">
+							<div class="guides-area-char">
+								<div class="flag flag-char">
+									<div class="flag-content">
+										<i class="bi bi-person-fill"></i>
+									</div>
+								</div>
+								<div class="guides-char-main-area">
+									<div class="guides-description-area">
+										<div class="guides-header-area">
+											<div class="guides-header-char face-hutao">
+											</div>
+											<div class="guides-header-main-info">
+												<div class="guides-header-main-name">
+													Hutao
+												</div>
+												<div class="guides-header-main-title">
+													77th-Gen. Director of the Wangsheng Funeral Parlor
+												</div>
+											</div>
+										</div>
+										<div class="guides-description-text-area">
+											<div class="char-banner-text">Spotlight:</div>
+											<p class="guides-description-text">
+												Hutao is a Pyro polearm user with a high-risk, high-reward playstyle. Her skills boost
+												attack power at the cost of HP, dealing significant Pyro damage and healing herself.
+											</p>
+										</div>
+										<div class="guides-description-info-area">
+											<div class="row w-100">
+												<div class="col">
+													<div class="char-banner-element">
+														<div class="char-banner-text">
+															Role:
+														</div>
+														<div class="char-banner-element-content">
+															<p>Main Dps</p>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="d-flex" style="min-width: 88px;">
+														<div class="char-banner-rarity me-auto">
+															<div class="char-banner-text">
+																Weapon:
+															</div>
+															<div class="char-banner-weapon-content char-banner-weapon">
+																<div class="icon-weapon weapon-polearm">
+																</div>
+																<p>Polearm</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row w-100">
+												<div class="col">
+													<div class="char-banner-rarity me-auto">
+														<div class="char-banner-text">
+															Rarity:
+														</div>
+														<div class="char-stars">
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="char-banner-element">
+														<div class="char-banner-text">
+															Element:
+														</div>
+														<div class="char-banner-element-content">
+															<div class="icon-element element-pyro">
+															</div>
+															<p>Pyro</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="guides-lore-area hidden">
+										<div class="guides-lore-text-area">
+											<div class="guides-lore-title">
+												Story Summary
+											</div>
+											<p class="guides-lore-text">
+												Hutao is the 77th Director of the Wangsheng Funeral Parlor in Liyue. Known for her eccentric
+												and lively personality, she approaches her role with a unique blend of humor and respect for
+												the deceased. Despite her young age, Hutao takes her responsibilities seriously and is
+												highly skilled in her profession. She has a deep understanding of life and death, which she
+												uses to comfort those who have lost loved ones. Hutao's journey is one of balancing her
+												playful nature with the solemn duties of her role, bringing light to even the darkest
+												moments.
+											</p>
+										</div>
+									</div>
+									<div class="guides-charview-area card-hutao hidden">
+										<div class="guides-charview-shadow"></div>
+									</div>
+								</div>
+								<div class="guides-link-area">
+									<div class="d-flex align-content-center">
+										<div class="guides-link-left me-auto"></div>
+										<div class="guides-link-right ms-auto"></div>
+									</div>
+								</div>
+								<div class="guides-action-area">
+									<div class="d-flex me-auto">
+										<div class="btn-group" role="group" aria-label="">
+											<input type="radio" class="btn-check" name="btnradio-hutao" id="btndescription-hutao"
+												autocomplete="off" checked>
+											<label class="btn btn-outline-primary" for="btndescription-hutao">
+												<i class="fa-solid fa-square-poll-horizontal"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-hutao" id="btnlore-hutao" autocomplete="off">
+											<label class="btn btn-outline-primary" for="btnlore-hutao">
+												<i class="fa-solid fa-book"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-hutao" id="btncharview-hutao"
+												autocomplete="off">
+											<label class="btn btn-outline-primary" for="btncharview-hutao">
+												<i class="fa-solid fa-eye"></i>
+											</label>
+										</div>
+									</div>
+									<a class="main-link main-link-outline">See More <span>↗</span></a>
+								</div>
+							</div>
+						</div>
+						<!-- Mona -->
+						<div class="col-md-3 guides-card-char hidden" id="card-mona">
+							<div class="guides-area-char">
+								<div class="flag flag-char">
+									<div class="flag-content">
+										<i class="bi bi-person-fill"></i>
+									</div>
+								</div>
+								<div class="guides-char-main-area">
+									<div class="guides-description-area">
+										<div class="guides-header-area">
+											<div class="guides-header-char face-mona">
+											</div>
+											<div class="guides-header-main-info">
+												<div class="guides-header-main-name">
+													Mona
+												</div>
+												<div class="guides-header-main-title">
+													Astrologist
+												</div>
+											</div>
+										</div>
+										<div class="guides-description-text-area">
+											<div class="char-banner-text">Spotlight:</div>
+											<p class="guides-description-text">
+												Mona is a Hydro catalyst user excelling in AoE damage and battlefield control. Her skills
+												taunt enemies and trap them, dealing significant Hydro damage.
+											</p>
+										</div>
+										<div class="guides-description-info-area">
+											<div class="row w-100">
+												<div class="col">
+													<div class="char-banner-element">
+														<div class="char-banner-text">
+															Role:
+														</div>
+														<div class="char-banner-element-content">
+															<p>Support</p>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="d-flex" style="min-width: 88px;">
+														<div class="char-banner-rarity me-auto">
+															<div class="char-banner-text">
+																Weapon:
+															</div>
+															<div class="char-banner-weapon-content char-banner-weapon">
+																<div class="icon-weapon weapon-catalyst">
+																</div>
+																<p>Catalyst</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row w-100">
+												<div class="col">
+													<div class="char-banner-rarity me-auto">
+														<div class="char-banner-text">
+															Rarity:
+														</div>
+														<div class="char-stars">
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="char-banner-element">
+														<div class="char-banner-text">
+															Element:
+														</div>
+														<div class="char-banner-element-content">
+															<div class="icon-element element-hydro">
+															</div>
+															<p>Hydro</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="guides-lore-area hidden">
+										<div class="guides-lore-text-area">
+											<div class="guides-lore-title">
+												Story Summary
+											</div>
+											<p class="guides-lore-text">
+												Mona is a highly skilled astrologist from Mondstadt, known for her accurate and insightful
+												readings. Despite her immense talent, she lives a frugal life due to her disdain for
+												material wealth and her dedication to pursuing knowledge. Mona is confident and outspoken,
+												often coming across as arrogant, but she has a deep sense of integrity and a genuine desire
+												to help others. Her journey is one of mastering the arcane arts and uncovering the secrets
+												of the stars, all while navigating the challenges of living true to her principles.
+											</p>
+										</div>
+									</div>
+									<div class="guides-charview-area card-mona hidden">
+										<div class="guides-charview-shadow"></div>
+									</div>
+								</div>
+								<div class="guides-link-area">
+									<div class="d-flex align-content-center">
+										<div class="guides-link-left me-auto"></div>
+										<div class="guides-link-right ms-auto"></div>
+									</div>
+								</div>
+								<div class="guides-action-area">
+									<div class="d-flex me-auto">
+										<div class="btn-group" role="group" aria-label="">
+											<input type="radio" class="btn-check" name="btnradio-mona" id="btndescription-mona"
+												autocomplete="off" checked>
+											<label class="btn btn-outline-primary" for="btndescription-mona">
+												<i class="fa-solid fa-square-poll-horizontal"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-mona" id="btnlore-mona" autocomplete="off">
+											<label class="btn btn-outline-primary" for="btnlore-mona">
+												<i class="fa-solid fa-book"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-mona" id="btncharview-mona"
+												autocomplete="off">
+											<label class="btn btn-outline-primary" for="btncharview-mona">
+												<i class="fa-solid fa-eye"></i>
+											</label>
+										</div>
+									</div>
+									<a class="main-link main-link-outline">See More <span>↗</span></a>
+								</div>
+							</div>
+						</div>
+						<!-- Nilou -->
+						<div class="col-md-3 guides-card-char hidden" id="card-nilou">
+							<div class="guides-area-char">
+								<div class="flag flag-char">
+									<div class="flag-content">
+										<i class="bi bi-person-fill"></i>
+									</div>
+								</div>
+								<div class="guides-char-main-area">
+									<div class="guides-description-area">
+										<div class="guides-header-area">
+											<div class="guides-header-char face-nilou">
+											</div>
+											<div class="guides-header-main-info">
+												<div class="guides-header-main-name">
+													Nilou
+												</div>
+												<div class="guides-header-main-title">
+													The Dancer of the Avidya Forest
+												</div>
+											</div>
+										</div>
+										<div class="guides-description-text-area">
+											<div class="char-banner-text">Spotlight:</div>
+											<p class="guides-description-text">
+												Nilou is a Hydro sword user who supports allies and deals consistent Hydro damage. Her
+												skills heal teammates and amplify Hydro damage, making her a valuable support.
+											</p>
+										</div>
+										<div class="guides-description-info-area">
+											<div class="row w-100">
+												<div class="col">
+													<div class="char-banner-element">
+														<div class="char-banner-text">
+															Role:
+														</div>
+														<div class="char-banner-element-content">
+															<p>Support</p>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="d-flex" style="min-width: 88px;">
+														<div class="char-banner-rarity me-auto">
+															<div class="char-banner-text">
+																Weapon:
+															</div>
+															<div class="char-banner-weapon-content char-banner-weapon">
+																<div class="icon-weapon weapon-sword">
+																</div>
+																<p>Sword</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row w-100">
+												<div class="col">
+													<div class="char-banner-rarity me-auto">
+														<div class="char-banner-text">
+															Rarity:
+														</div>
+														<div class="char-stars">
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="char-banner-element">
+														<div class="char-banner-text">
+															Element:
+														</div>
+														<div class="char-banner-element-content">
+															<div class="icon-element element-hydro">
+															</div>
+															<p>Hydro</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="guides-lore-area hidden">
+										<div class="guides-lore-text-area">
+											<div class="guides-lore-title">
+												Story Summary
+											</div>
+											<p class="guides-lore-text">
+												Nilou is a renowned dancer from Sumeru, celebrated for her mesmerizing performances that
+												combine grace and elemental magic. Born into a family of performers, she has dedicated her
+												life to perfecting her craft and bringing joy to audiences. Despite her gentle demeanor,
+												Nilou is determined and disciplined, always striving to push the boundaries of her art. Her
+												journey is one of pursuing passion and inspiring others, all while staying true to her roots
+												and the traditions of her homeland.
+											</p>
+										</div>
+									</div>
+									<div class="guides-charview-area card-nilou hidden">
+										<div class="guides-charview-shadow"></div>
+									</div>
+								</div>
+								<div class="guides-link-area">
+									<div class="d-flex align-content-center">
+										<div class="guides-link-left me-auto"></div>
+										<div class="guides-link-right ms-auto"></div>
+									</div>
+								</div>
+								<div class="guides-action-area">
+									<div class="d-flex me-auto">
+										<div class="btn-group" role="group" aria-label="">
+											<input type="radio" class="btn-check" name="btnradio-nilou" id="btndescription-nilou"
+												autocomplete="off" checked>
+											<label class="btn btn-outline-primary" for="btndescription-nilou">
+												<i class="fa-solid fa-square-poll-horizontal"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-nilou" id="btnlore-nilou" autocomplete="off">
+											<label class="btn btn-outline-primary" for="btnlore-nilou">
+												<i class="fa-solid fa-book"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-nilou" id="btncharview-nilou"
+												autocomplete="off">
+											<label class="btn btn-outline-primary" for="btncharview-nilou">
+												<i class="fa-solid fa-eye"></i>
+											</label>
+										</div>
+									</div>
+									<a class="main-link main-link-outline">See More <span>↗</span></a>
+								</div>
+							</div>
+						</div>
+						<!-- Xiao -->
+						<div class="col-md-3 guides-card-char hidden" id="card-xiao">
+							<div class="guides-area-char">
+								<div class="flag flag-char">
+									<div class="flag-content">
+										<i class="bi bi-person-fill"></i>
+									</div>
+								</div>
+								<div class="guides-char-main-area">
+									<div class="guides-description-area">
+										<div class="guides-header-area">
+											<div class="guides-header-char face-xiao">
+											</div>
+											<div class="guides-header-main-info">
+												<div class="guides-header-main-name">
+													Xiao
+												</div>
+												<div class="guides-header-main-title">
+													Guardian Yaksha
+												</div>
+											</div>
+										</div>
+										<div class="guides-description-text-area">
+											<div class="char-banner-text">Spotlight:</div>
+											<p class="guides-description-text">
+												Xiao is an Anemo polearm user with high mobility and single-target damage. His skills allow
+												for quick dashes and powerful Anemo attacks, making him an agile damage dealer.
+											</p>
+										</div>
+										<div class="guides-description-info-area">
+											<div class="row w-100">
+												<div class="col">
+													<div class="char-banner-element">
+														<div class="char-banner-text">
+															Role:
+														</div>
+														<div class="char-banner-element-content">
+															<p>Main Dps</p>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="d-flex" style="min-width: 88px;">
+														<div class="char-banner-rarity me-auto">
+															<div class="char-banner-text">
+																Weapon:
+															</div>
+															<div class="char-banner-weapon-content char-banner-weapon">
+																<div class="icon-weapon weapon-polearm">
+																</div>
+																<p>Polearm</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row w-100">
+												<div class="col">
+													<div class="char-banner-rarity me-auto">
+														<div class="char-banner-text">
+															Rarity:
+														</div>
+														<div class="char-stars">
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="char-banner-element">
+														<div class="char-banner-text">
+															Element:
+														</div>
+														<div class="char-banner-element-content">
+															<div class="icon-element element-anemo">
+															</div>
+															<p>Anemo</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="guides-lore-area hidden">
+										<div class="guides-lore-text-area">
+											<div class="guides-lore-title">
+												Story Summary
+											</div>
+											<p class="guides-lore-text">
+												Xiao is one of the adepti, an ancient guardian deity of Liyue known as the "Conqueror of
+												Demons." He has fought countless battles against evil spirits and demons, often working
+												alone to protect the region. Despite his stoic and distant demeanor, Xiao is deeply
+												committed to his duty and harbors a heavy burden from his past. His journey is one of
+												redemption and sacrifice, as he continues to protect Liyue from the shadows while grappling
+												with the lingering effects of his long and arduous battles.
+											</p>
+										</div>
+									</div>
+									<div class="guides-charview-area card-xiao hidden">
+										<div class="guides-charview-shadow"></div>
+									</div>
+								</div>
+								<div class="guides-link-area">
+									<div class="d-flex align-content-center">
+										<div class="guides-link-left me-auto"></div>
+										<div class="guides-link-right ms-auto"></div>
+									</div>
+								</div>
+								<div class="guides-action-area">
+									<div class="d-flex me-auto">
+										<div class="btn-group" role="group" aria-label="">
+											<input type="radio" class="btn-check" name="btnradio-xiao" id="btndescription-xiao"
+												autocomplete="off" checked>
+											<label class="btn btn-outline-primary" for="btndescription-xiao">
+												<i class="fa-solid fa-square-poll-horizontal"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-xiao" id="btnlore-xiao" autocomplete="off">
+											<label class="btn btn-outline-primary" for="btnlore-xiao">
+												<i class="fa-solid fa-book"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-xiao" id="btncharview-xiao"
+												autocomplete="off">
+											<label class="btn btn-outline-primary" for="btncharview-xiao">
+												<i class="fa-solid fa-eye"></i>
+											</label>
+										</div>
+									</div>
+									<a class="main-link main-link-outline">See More <span>↗</span></a>
+								</div>
+							</div>
+						</div>
+						<!-- Raiden -->
+						<div class="col-md-3 guides-card-char hidden" id="card-raiden">
+							<div class="guides-area-char">
+								<div class="flag flag-char">
+									<div class="flag-content">
+										<i class="bi bi-person-fill"></i>
+									</div>
+								</div>
+								<div class="guides-char-main-area">
+									<div class="guides-description-area">
+										<div class="guides-header-area">
+											<div class="guides-header-char face-raiden">
+											</div>
+											<div class="guides-header-main-info">
+												<div class="guides-header-main-name">
+													Raiden
+												</div>
+												<div class="guides-header-main-title">
+													The Plane of Euthymia
+												</div>
+											</div>
+										</div>
+										<div class="guides-description-text-area">
+											<div class="char-banner-text">Spotlight:</div>
+											<p class="guides-description-text">
+												Raiden is an Electro polearm user who provides burst damage and energy regeneration. Her
+												skills boost energy recharge for allies and deal massive Electro damage.
+											</p>
+										</div>
+										<div class="guides-description-info-area">
+											<div class="row w-100">
+												<div class="col">
+													<div class="char-banner-element">
+														<div class="char-banner-text">
+															Role:
+														</div>
+														<div class="char-banner-element-content">
+															<p>Main Dps</p>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="d-flex" style="min-width: 88px;">
+														<div class="char-banner-rarity me-auto">
+															<div class="char-banner-text">
+																Weapon:
+															</div>
+															<div class="char-banner-weapon-content char-banner-weapon">
+																<div class="icon-weapon weapon-polearm">
+																</div>
+																<p>Polearm</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row w-100">
+												<div class="col">
+													<div class="char-banner-rarity me-auto">
+														<div class="char-banner-text">
+															Rarity:
+														</div>
+														<div class="char-stars">
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star"></i>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="char-banner-element">
+														<div class="char-banner-text">
+															Element:
+														</div>
+														<div class="char-banner-element-content">
+															<div class="icon-element element-electro">
+															</div>
+															<p>Electro</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="guides-lore-area hidden">
+										<div class="guides-lore-text-area">
+											<div class="guides-lore-title">
+												Story Summary
+											</div>
+											<p class="guides-lore-text">
+												Raiden Shogun, also known as Ei, is the Electro Archon and ruler of Inazuma. She is
+												dedicated to achieving eternity for her nation, enforcing strict laws to maintain order and
+												stability. Behind her seemingly unyielding exterior lies a complex character burdened by
+												loss and the weight of her responsibilities. As a leader, she seeks to preserve the ideals
+												of her people while grappling with the challenges of maintaining a timeless vision. Raiden's
+												journey is one of balancing power and compassion, as she strives to guide Inazuma through
+												tumultuous times while honoring the memory of her loved ones.
+											</p>
+										</div>
+									</div>
+
+									<div class="guides-charview-area card-raiden hidden">
+										<div class="guides-charview-shadow"></div>
+									</div>
+								</div>
+								<div class="guides-link-area">
+									<div class="d-flex align-content-center">
+										<div class="guides-link-left me-auto"></div>
+										<div class="guides-link-right ms-auto"></div>
+									</div>
+								</div>
+								<div class="guides-action-area">
+									<div class="d-flex me-auto">
+										<div class="btn-group" role="group" aria-label="">
+											<input type="radio" class="btn-check" name="btnradio-raiden" id="btndescription-raiden"
+												autocomplete="off" checked>
+											<label class="btn btn-outline-primary" for="btndescription-raiden">
+												<i class="fa-solid fa-square-poll-horizontal"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-raiden" id="btnlore-raiden"
+												autocomplete="off">
+											<label class="btn btn-outline-primary" for="btnlore-raiden">
+												<i class="fa-solid fa-book"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-raiden" id="btncharview-raiden"
+												autocomplete="off">
+											<label class="btn btn-outline-primary" for="btncharview-raiden">
+												<i class="fa-solid fa-eye"></i>
+											</label>
+										</div>
+									</div>
+									<a class="main-link main-link-outline">See More <span>↗</span></a>
+								</div>
+							</div>
+						</div>
+						<!-- Zhongli -->
+						<!--<div class="col-md-3 guides-card-char hidden" id="card-zhongli">
+							<div class="guides-area-char">
+								<div class="flag flag-char">
+									<div class="flag-content">
+										<i class="bi bi-person-fill"></i>
+									</div>
+								</div>
+								<div class="guides-char-main-area">
+									<div class="guides-description-area">
+										<div class="guides-header-area">
+											<div class="guides-header-char face-zhongli">
+											</div>
+											<div class="guides-header-main-info">
+												<div class="guides-header-main-name">
+													Zhongli
+												</div>
+												<div class="guides-header-main-title">
+													Vago Mundo
+												</div>
+											</div>
+										</div>
+										<div class="guides-description-text-area">
+											<div class="char-banner-text">Spotlight:</div>
+											<p class="guides-description-text">
+												Zhongli is a Geo polearm user providing shields and burst damage. His skills create strong
+												shields and summon a meteor for significant Geo damage, enhancing team survivability and
+												control.
+											</p>
+										</div>
+										<div class="guides-description-info-area">
+											<div class="row w-100">
+												<div class="col">
+													<div class="char-banner-element">
+														<div class="char-banner-text">
+															Role:
+														</div>
+														<div class="char-banner-element-content">
+															<p>Support</p>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="d-flex" style="min-width: 88px;">
+														<div class="char-banner-rarity me-auto">
+															<div class="char-banner-text">
+																Weapon:
+															</div>
+															<div class="char-banner-weapon-content char-banner-weapon">
+																<div class="icon-weapon weapon-polearm">
+																</div>
+																<p>Polearm</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row w-100">
+												<div class="col">
+													<div class="char-banner-rarity me-auto">
+														<div class="char-banner-text">
+															Rarity:
+														</div>
+														<div class="char-stars">
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="char-banner-element">
+														<div class="char-banner-text">
+															Element:
+														</div>
+														<div class="char-banner-element-content">
+															<div class="icon-element element-geo">
+															</div>
+															<p>Geo</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="guides-lore-area hidden">
+										<div class="guides-lore-text-area">
+											<div class="guides-lore-title">
+												Story Summary
+											</div>
+											<p class="guides-lore-text">
+												Zhongli, also known as Rex Lapis, is the former Geo Archon of Liyue and now lives as a
+												consultant for the Wangsheng Funeral Parlor. Known for his wisdom and deep knowledge of
+												history and culture, Zhongli is a refined and composed individual. Despite stepping down
+												from his position as Archon, he remains deeply connected to the people of Liyue, guiding
+												them with his insights and experience. His journey is one of transitioning from a god to a
+												mortal, embracing the joys and challenges of a more ordinary life while continuing to
+												protect and support his beloved city.
+											</p>
+										</div>
+									</div>
+									<div class="guides-charview-area card-zhongli hidden">
+										<div class="guides-charview-shadow"></div>
+									</div>
+								</div>
+								<div class="guides-link-area">
+									<div class="d-flex align-content-center">
+										<div class="guides-link-left me-auto"></div>
+										<div class="guides-link-right ms-auto"></div>
+									</div>
+								</div>
+								<div class="guides-action-area">
+									<div class="d-flex me-auto">
+										<div class="btn-group" role="group" aria-label="">
+											<input type="radio" class="btn-check" name="btnradio-zhongli" id="btndescription-zhongli"
+												autocomplete="off" checked>
+											<label class="btn btn-outline-primary" for="btndescription-zhongli">
+												<i class="fa-solid fa-square-poll-horizontal"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-zhongli" id="btnlore-zhongli"
+												autocomplete="off">
+											<label class="btn btn-outline-primary" for="btnlore-zhongli">
+												<i class="fa-solid fa-book"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-zhongli" id="btncharview-zhongli"
+												autocomplete="off">
+											<label class="btn btn-outline-primary" for="btncharview-zhongli">
+												<i class="fa-solid fa-eye"></i>
+											</label>
+										</div>
+									</div>
+									<a class="main-link main-link-outline">See More <span>↗</span></a>
+								</div>
+							</div>
+						</div>-->
+						<!-- Load More -->
+						<div class="load-more">
+							<button id="load-more-char" class="btn btn-primary main-link btn-load load-more-char">
+								Load more
+							</button>
+							<div id="spinner-char" role="status" class="hidden" margin: auto;">
+								<button class="btn-loading" type="button" disabled>
+									<span class="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
+									<span role="status ms-2">Loading...</span>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="caption-signature">
+						<div>
+							<p class="fw-light m-0 m	'-0">See the collection of<br><span class="fw-bold">Characters</span></p>
+						</div>
+						<div class="ms-auto">
+							<a href="" class="main-link">
+								See More <span>↗</span>
+							</a>
+						</div>
+					</div>
+					<!-- Weapon Banner -->
+					<div class="char-main-banner-area weapon-banner-the-unforged">
+						<div class="char-tag-popular">Popular</div>
+						<div class="char-main-banner-content">
+							<div class="weapon-main-banner-description" style=" z-index: 999;">
+								<div class="ms-2">
+									<div class="char-main-banner-title">
+										<div class="d-flex">
+											<div class="guides-header-area">
+												<div class="guides-header-weapon header-weapon-fivestars">
+													<div class="weapon-avatar weapon-the-unforged">
+													</div>
+												</div>
+												<div>
+													<div class="weapon-main-banner-name">
+														The Unforged
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="weapon-banner-description-area">
+										<div class="weapon-banner-subtitle">Spotlight:</div>
+										<p class="weapon-banner-description-text">
+											Capable of driving away evil spirits and wicked people alike, this edgeless claymore seems to
+											possess divine might.
+										</p>
+									</div>
+									<div class="weapon-banner-level mybgyellow">Lv. 90</div>
+									<div class="row w-100">
+										<div class="col">
+											<div class="weapon-banner-subtitle">
+												Base Atk:
+											</div>
+											<div class="weapon-banner-value-content">
+												<p>608</p>
+											</div>
+										</div>
+										<div class="col">
+											<div class="weapon-banner-subtitle">
+												ATK Bonus:
+											</div>
+											<div class="weapon-banner-value-content">
+												<p>49.6%</p>
+											</div>
+										</div>
+									</div>
+									<div class="guides-description-weapon-info-area">
+										<div class="row w-100">
+											<div class="col">
+												<div class="char-banner-rarity me-auto">
+													<div class="weapon-banner-subtitle">
+														Weapon:
+													</div>
+													<div class="char-banner-weapon-content weapon-banner-value-content char-banner-weapon">
+														<div class="icon-weapon weapon-claymore">
+														</div>
+														<p>Claymore</p>
+													</div>
+												</div>
+											</div>
+											<div class="col">
+												<div class="char-banner-rarity me-auto">
+													<div class="weapon-banner-subtitle">
+														Rarity:
+													</div>
+													<div class="char-stars">
+														<i class="bi bi-star-fill"></i>
+														<i class="bi bi-star-fill"></i>
+														<i class="bi bi-star-fill"></i>
+														<i class="bi bi-star-fill"></i>
+														<i class="bi bi-star-fill"></i>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="weapon-main-banner-background banner-inazuma">
+								<div class="weapon-main-banner-shadow-left">
+									<div class="weapon-effect event-yellow">
+										<div class="weapon-main-banner weapon-the-unforged-bigsize"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<!-- Veridict -->
+						<div class="col-md-3 guides-card-weapon" id="card-veridict">
+							<div class="guides-area-weapon">
+								<div class="guides-weapon-main-area">
+									<div class="flag flag-weapon">
+										<div class="flag-content">
+											<span class="material-symbols-rounded">
+												swords
+											</span>
+										</div>
+									</div>
+									<div class="guides-description-area">
+										<div class="guides-header-area">
+											<div class="guides-header-weapon header-weapon-fivestars">
+												<div class="weapon-avatar weapon-veridict">
+												</div>
+											</div>
+											<div class="guides-header-main-info">
+												<div class="guides-header-main-name mb-0">
+													Veridict
+												</div>
+											</div>
+										</div>
+										<div class="guides-weapon-description-text-area">
+											<div class="char-banner-text">Spotlight:</div>
+											<p class="guides-description-weapon-text">
+												A sword used by a young maiden who has abandoned her family name, stained with the blood of
+												enemies and relatives.
+											</p>
+										</div>
+										<div class="weapon-banner-level">Lv. 90</div>
+										<div class="row w-100">
+											<div class="col">
+												<div class="char-banner-text">
+													Base Atk:
+												</div>
+												<div class="char-banner-element-content">
+													<p>674</p>
+												</div>
+											</div>
+											<div class="col">
+												<div class="char-banner-text">
+													Crit Rate:
+												</div>
+												<div class="char-banner-element-content">
+													<p>22.1%</p>
+												</div>
+											</div>
+										</div>
+										<div class="guides-description-weapon-info-area">
+											<div class="row w-100">
+												<div class="col">
+													<div class="char-banner-rarity me-auto">
+														<div class="char-banner-text">
+															Weapon:
+														</div>
+														<div class="char-banner-weapon-content char-banner-weapon">
+															<div class="icon-weapon weapon-claymore">
+															</div>
+															<p>Claymore</p>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="char-banner-rarity me-auto">
+														<div class="char-banner-text">
+															Rarity:
+														</div>
+														<div class="char-stars">
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="guides-effect-area hidden">
+										<div class="guides-effect-area-text">
+											<div class="guides-effect-title">
+												Many Oaths of Dawn and Dusk
+											</div>
+											<div class="tab-content guides-effect-description-text" id="Refinementveridict">
+												<div class="tab-pane fade show active" id="refinement-veridict-1" role="tabpanel"
+													aria-labelledby="refinement-veridict-1-tab">
+													Increases ATK by <span>20%</span>. <br>When characters in your party obtain
+													Elemental Shards from Crystallize reactions, the equipping character will gain 1 Seal,
+													increasing Elemental Skill DMG by <span>18%</span>. The Seal lasts for 15s,
+													and the equipper may have up to 2 Seals at once. All of the equipper's Seals will
+													disappear
+													0.2s
+													after their Elemental Skill deals DMG.
+												</div>
+												<div class="tab-pane fade" id="refinement-veridict-2" role="tabpanel"
+													aria-labelledby="refinement-veridict-2-tab">
+													Increases ATK by <span>25%</span>. <br>When characters in your party obtain
+													Elemental Shards from Crystallize reactions, the equipping character will gain 1 Seal,
+													increasing Elemental Skill DMG by <span>22.5%</span>. The Seal lasts for 15s,
+													and the equipper may have up to 2 Seals at once. All of the equipper's Seals will
+													disappear
+													0.2s
+													after their Elemental Skill deals DMG.
+												</div>
+												<div class="tab-pane fade" id="refinement-veridict-3" role="tabpanel"
+													aria-labelledby="refinement-veridict-3-tab">
+													Increases ATK by <span>30%</span>. <br>When characters in your party obtain
+													Elemental Shards from Crystallize reactions, the equipping character will gain 1 Seal,
+													increasing Elemental Skill DMG by <span>27%</span>. The Seal lasts for 15s,
+													and the equipper may have up to 2 Seals at once. All of the equipper's Seals will
+													disappear
+													0.2s
+													after their Elemental Skill deals DMG.
+												</div>
+												<div class="tab-pane fade" id="refinement-veridict-4" role="tabpanel"
+													aria-labelledby="refinement-veridict-4-tab">
+													Increases ATK by <span>35%</span>. <br>When characters in your party obtain
+													Elemental Shards from Crystallize reactions, the equipping character will gain 1 Seal,
+													increasing Elemental Skill DMG by <span>31.5%</span>. The Seal lasts for 15s,
+													and the equipper may have up to 2 Seals at once. All of the equipper's Seals will
+													disappear
+													0.2s
+													after their Elemental Skill deals DMG.
+												</div>
+												<div class="tab-pane fade" id="refinement-veridict-5" role="tabpanel"
+													aria-labelledby="refinement-veridict-5-tab">
+													Increases ATK by <span>40%</span>. <br>When characters in your party obtain
+													Elemental Shards from Crystallize reactions, the equipping character will gain 1 Seal,
+													increasing Elemental Skill DMG by <span>36%</span>. The Seal lasts for 15s,
+													and the equipper may have up to 2 Seals at once. All of the equipper's Seals will
+													disappear
+													0.2s
+													after their Elemental Skill deals DMG.
+												</div>
+											</div>
+										</div>
+										<div class="nav-tabs-refinement">
+											<div class="guides-effect-refinement-title">
+												Refinement:
+											</div>
+											<div class="ms-auto">
+												<ul class="nav nav-tabs" id="Refinementveridict" role="tablist">
+													<li class="nav-item">
+														<button class="nav-link active" id="refinement-veridict-1-tab" data-bs-toggle="tab"
+															href="#refinement-veridict-1" role="tab" aria-controls="refinement-veridict-1"
+															aria-selected="true">1</button>
+													</li>
+													<li class="nav-item">
+														<button class="nav-link" id="refinement-veridict-2-tab" data-bs-toggle="tab"
+															href="#refinement-veridict-2" role="tab" aria-controls="refinement-veridict-2"
+															aria-selected="false">2</button>
+													</li>
+													<li class="nav-item">
+														<button class="nav-link" id="refinement-veridict-3-tab" data-bs-toggle="tab"
+															href="#refinement-veridict-3" role="tab" aria-controls="refinement-3"
+															aria-selected="false">3</button>
+													</li>
+													<li class="nav-item">
+														<button class="nav-link" id="refinement-veridict-4-tab" data-bs-toggle="tab"
+															href="#refinement-veridict-4" role="tab" aria-controls="refinement-4"
+															aria-selected="false">4</button>
+													</li>
+													<li class="nav-item">
+														<button class="nav-link" id="refinement-veridict-5-tab" data-bs-toggle="tab"
+															href="#refinement-veridict-5" role="tab" aria-controls="refinement-veridict-5"
+															aria-selected="false">5</button>
+													</li>
+												</ul>
+											</div>
+										</div>
+
+									</div>
+									<div class="guides-lore-area hidden">
+										<div class="guides-lore-text-area">
+											<div class="guides-lore-title">
+												Story Summary
+											</div>
+											<p class="guides-lore-text">
+												erdict's description begins several years before the Siege of Poisson, and gives an
+												account
+												of how the noblewoman Leticia Randolph came to be associated with the Fleuve Cendre.
+												Leticia
+												fell in love with Reed and abandoned her Randolph identity to live in the Fleuve Cendre
+												with
+												him, "[taking] on the name of the rose" instead. Between the descriptions of Verdict and
+												Fleuve Cendre Ferryman, it can be deduced that Leticia and her husband are the same people
+												as Rosa and Thompson Reed, two members of Eduardo Baker's faction involved in the
+												occupation
+												of Poisson and the subsequent Siege of Poisson.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="guides-link-area">
+									<div class="d-flex align-content-center">
+										<div class="guides-link-left me-auto"></div>
+										<div class="guides-link-right ms-auto"></div>
+									</div>
+								</div>
+								<div class="guides-action-area">
+									<div class="d-flex me-auto">
+										<div class="btn-group" role="group" aria-label="">
+											<input type="radio" class="btn-check" name="btnradio-veridict" id="btndescription-veridict"
+												autocomplete="off" checked>
+											<label class="btn btn-outline-primary" for="btndescription-veridict">
+												<i class="fa-solid fa-square-poll-horizontal"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-veridict" id="btneffect-veridict"
+												autocomplete="off">
+											<label class="btn btn-outline-primary" for="btneffect-veridict">
+												<i class="fa-solid fa-fire-flame-curved"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-veridict" id="btnlore-veridict"
+												autocomplete="off">
+											<label class="btn btn-outline-primary" for="btnlore-veridict">
+												<i class="fa-solid fa-book"></i>
+											</label>
+										</div>
+									</div>
+									<a class="main-link main-link-outline">See More <span>↗</span></a>
+								</div>
+							</div>
+						</div>
+						<!-- Wolf's Gravestone -->
+						<div class="col-md-3 guides-card-weapon" id="card-wolfs-gravestone">
+							<div class="guides-area-weapon">
+								<div class="guides-weapon-main-area">
+									<div class="flag flag-weapon">
+										<div class="flag-content">
+											<span class="material-symbols-rounded">
+												swords
+											</span>
+										</div>
+									</div>
+									<div class="guides-description-area">
+										<div class="guides-header-area">
+											<div class="guides-header-weapon header-weapon-fivestars">
+												<div class="weapon-avatar weapon-wolfs-gravestone">
+												</div>
+											</div>
+											<div class="guides-header-main-info">
+												<div class="guides-header-main-name mb-0">
+													Wolf's Gravestone
+												</div>
+											</div>
+										</div>
+										<div class="guides-weapon-description-text-area">
+											<div class="char-banner-text">Spotlight:</div>
+											<p class="guides-description-weapon-text">
+												A greatsword once worn by the wolf knight. It calls upon the power of the wolf to cut
+												straight through the heart of corruption.
+											</p>
+										</div>
+										<div class="weapon-banner-level">Lv. 90</div>
+										<div class="row w-100">
+											<div class="col">
+												<div class="char-banner-text">
+													Base Atk:
+												</div>
+												<div class="char-banner-element-content">
+													<p>608</p>
+												</div>
+											</div>
+											<div class="col">
+												<div class="char-banner-text">
+													ATK Bonus:
+												</div>
+												<div class="char-banner-element-content">
+													<p>49.6%</p>
+												</div>
+											</div>
+										</div>
+										<div class="guides-description-weapon-info-area">
+											<div class="row w-100">
+												<div class="col">
+													<div class="char-banner-rarity me-auto">
+														<div class="char-banner-text">
+															Weapon:
+														</div>
+														<div class="char-banner-weapon-content char-banner-weapon">
+															<div class="icon-weapon weapon-claymore">
+															</div>
+															<p>Claymore</p>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="char-banner-rarity me-auto">
+														<div class="char-banner-text">
+															Rarity:
+														</div>
+														<div class="char-stars">
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="guides-effect-area hidden">
+										<div class="guides-effect-area-text">
+											<div class="guides-effect-title">
+												Wolfish Tracker
+											</div>
+											<div class="tab-content guides-effect-description-text" id="RefinementTab-wolfsgravestone">
+												<div class="tab-pane fade show active" id="refinement-wolfsgravestone-1" role="tabpanel">
+													Increases ATK by <span>20%</span>. On hit, attacks against opponents with less than 30% HP
+													increase all party members' ATK by <span>40%</span> for 12s. Can only occur once every
+													30s.
+												</div>
+												<div class="tab-pane fade" id="refinement-wolfsgravestone-2" role="tabpanel">
+													Increases ATK by <span>25%</span>. On hit, attacks against opponents with less than 30% HP
+													increase all party members' ATK by <span>50%</span> for 12s. Can only occur once every
+													30s.
+												</div>
+												<div class="tab-pane fade" id="refinement-wolfsgravestone-3" role="tabpanel">
+													Increases ATK by <span>30%</span>. On hit, attacks against opponents with less than 30% HP
+													increase all party members' ATK by <span>60%</span> for 12s. Can only occur once every
+													30s.
+												</div>
+												<div class="tab-pane fade" id="refinement-wolfsgravestone-4" role="tabpanel">
+													Increases ATK by <span>35%</span>. On hit, attacks against opponents with less than 30% HP
+													increase all party members' ATK by <span>70%</span> for 12s. Can only occur once every
+													30s.
+												</div>
+												<div class="tab-pane fade" id="refinement-wolfsgravestone-5" role="tabpanel">
+													Increases ATK by <span>40%</span>. On hit, attacks against opponents with less than 30% HP
+													increase all party members' ATK by <span>80%</span> for 12s. Can only occur once every
+													30s.
+												</div>
+											</div>
+										</div>
+										<div class="nav-tabs-refinement">
+											<div class="guides-effect-refinement-title">
+												Refinement:
+											</div>
+											<div class="ms-auto">
+												<ul class="nav nav-tabs" id="RefinementTab-wolfsgravestone" role="tablist">
+													<li class="nav-item" role="presentation">
+														<button class="nav-link active" data-bs-toggle="tab"
+															data-bs-target="#refinement-wolfsgravestone-1" type="button" role="tab">1</button>
+													</li>
+													<li class="nav-item" role="presentation">
+														<button class="nav-link" data-bs-toggle="tab" data-bs-target="#refinement-wolfsgravestone-2"
+															type="button" role="tab">2</button>
+													</li>
+													<li class="nav-item" role="presentation">
+														<button class="nav-link" data-bs-toggle="tab" data-bs-target="#refinement-wolfsgravestone-3"
+															type="button" role="tab">3</button>
+													</li>
+													<li class="nav-item" role="presentation">
+														<button class="nav-link" data-bs-toggle="tab" data-bs-target="#refinement-wolfsgravestone-4"
+															type="button" role="tab">4</button>
+													</li>
+													<li class="nav-item" role="presentation">
+														<button class="nav-link" data-bs-toggle="tab" data-bs-target="#refinement-wolfsgravestone-5"
+															type="button" role="tab">5</button>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="guides-lore-area hidden">
+										<div class="guides-lore-text-area">
+											<div class="guides-lore-title">
+												Story Summary
+											</div>
+											<p class="guides-lore-text">
+												Wolf's Gravestone's lore tells the tale of a knight who carried the will of the wolf to
+												defend the weak. This weapon is imbued with the spirit of the wolf, symbolizing unwavering
+												strength and resilience.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="guides-link-area">
+									<div class="d-flex align-content-center">
+										<div class="guides-link-left me-auto"></div>
+										<div class="guides-link-right ms-auto"></div>
+									</div>
+								</div>
+								<div class="guides-action-area">
+									<div class="d-flex me-auto">
+										<div class="btn-group" role="group" aria-label="">
+											<input type="radio" class="btn-check" name="btnradio-wolfs-gravestone"
+												id="btndescription-wolfs-gravestone" autocomplete="off" checked>
+											<label class="btn btn-outline-primary" for="btndescription-wolfs-gravestone">
+												<i class="fa-solid fa-square-poll-horizontal"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-wolfs-gravestone"
+												id="btneffect-wolfs-gravestone" autocomplete="off">
+											<label class="btn btn-outline-primary" for="btneffect-wolfs-gravestone">
+												<i class="fa-solid fa-fire-flame-curved"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-wolfs-gravestone"
+												id="btnlore-wolfs-gravestone" autocomplete="off">
+											<label class="btn btn-outline-primary" for="btnlore-wolfs-gravestone">
+												<i class="fa-solid fa-book"></i>
+											</label>
+										</div>
+									</div>
+									<a class="main-link main-link-outline">See More <span>↗</span></a>
+								</div>
+							</div>
+						</div>
+						<!-- Xiphos' Moonlight -->
+						<div class="col-md-3 guides-card-weapon" id="card-xiphos-moonlight">
+							<div class="guides-area-weapon">
+								<div class="guides-weapon-main-area">
+									<div class="flag flag-weapon">
+										<div class="flag-content">
+											<span class="material-symbols-rounded">
+												swords
+											</span>
+										</div>
+									</div>
+									<div class="guides-description-area">
+										<div class="guides-header-area">
+											<div class="guides-header-weapon header-weapon-fourstars">
+												<div class="weapon-avatar weapon-xiphos-moonlight">
+												</div>
+											</div>
+											<div class="guides-header-main-info">
+												<div class="guides-header-main-name mb-0">
+													Xiphos' Moonlight
+												</div>
+											</div>
+										</div>
+										<div class="guides-weapon-description-text-area">
+											<div class="char-banner-text">Spotlight:</div>
+											<p class="guides-description-weapon-text">
+												A moonlit sword that reveals the hidden truths under its glow.
+											</p>
+										</div>
+										<div class="weapon-banner-level">Lv. 90</div>
+										<div class="row w-100">
+											<div class="col">
+												<div class="char-banner-text">
+													Base Atk:
+												</div>
+												<div class="char-banner-element-content">
+													<p>510</p>
+												</div>
+											</div>
+											<div class="col p-0">
+												<div class="char-banner-text">
+													Elemental Mastery:
+												</div>
+												<div class="char-banner-element-content">
+													<p>165</p>
+												</div>
+											</div>
+										</div>
+										<div class="guides-description-weapon-info-area">
+											<div class="row w-100">
+												<div class="col">
+													<div class="char-banner-rarity me-auto">
+														<div class="char-banner-text">
+															Weapon:
+														</div>
+														<div class="char-banner-weapon-content char-banner-weapon">
+															<div class="icon-weapon weapon-sword">
+															</div>
+															<p>Sword</p>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="char-banner-rarity me-auto">
+														<div class="char-banner-text">
+															Rarity:
+														</div>
+														<div class="char-stars">
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star"></i>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="guides-effect-area hidden">
+										<div class="guides-effect-area-text">
+											<div class="guides-effect-title">
+												Sunken Eye
+											</div>
+											<div class="tab-content guides-effect-description-text" id="Refinementxiphos">
+												<div class="tab-pane fade show active" id="refinement-xiphos-1" role="tabpanel"
+													aria-labelledby="refinement-xiphos-1-tab">
+													The following effect will trigger every 10s: the wielder will gain a buff that increases
+													Elemental Mastery by <span>50</span> and ATK by <span>15%</span> for 6s.
+												</div>
+												<div class="tab-pane fade" id="refinement-xiphos-2" role="tabpanel"
+													aria-labelledby="refinement-xiphos-2-tab">
+													The following effect will trigger every 10s: the wielder will gain a buff that increases
+													Elemental Mastery by <span>60</span> and ATK by <span>20%</span> for 6s.
+												</div>
+												<div class="tab-pane fade" id="refinement-xiphos-3" role="tabpanel"
+													aria-labelledby="refinement-xiphos-3-tab">
+													The following effect will trigger every 10s: the wielder will gain a buff that increases
+													Elemental Mastery by <span>70</span> and ATK by <span>25%</span> for 6s.
+												</div>
+												<div class="tab-pane fade" id="refinement-xiphos-4" role="tabpanel"
+													aria-labelledby="refinement-xiphos-4-tab">
+													The following effect will trigger every 10s: the wielder will gain a buff that increases
+													Elemental Mastery by <span>80</span> and ATK by <span>30%</span> for 6s.
+												</div>
+												<div class="tab-pane fade" id="refinement-xiphos-5" role="tabpanel"
+													aria-labelledby="refinement-xiphos-5-tab">
+													The following effect will trigger every 10s: the wielder will gain a buff that increases
+													Elemental Mastery by <span>90</span> and ATK by <span>35%</span> for 6s.
+												</div>
+											</div>
+										</div>
+										<div class="nav-tabs-refinement">
+											<div class="guides-effect-refinement-title">
+												Refinement:
+											</div>
+											<div class="ms-auto">
+												<ul class="nav nav-tabs" id="Refinement-xiphosTab" role="tablist">
+													<li class="nav-item">
+														<button class="nav-link active" id="refinement-xiphos-1-tab" data-bs-toggle="tab"
+															href="#refinement-xiphos-1" role="tab" aria-controls="refinement-xiphos-1"
+															aria-selected="true">1</button>
+													</li>
+													<li class="nav-item">
+														<button class="nav-link" id="refinement-xiphos-2-tab" data-bs-toggle="tab"
+															href="#refinement-xiphos-2" role="tab" aria-controls="refinement-xiphos-2"
+															aria-selected="false">2</button>
+													</li>
+													<li class="nav-item">
+														<button class="nav-link" id="refinement-xiphos-3-tab" data-bs-toggle="tab"
+															href="#refinement-xiphos-3" role="tab" aria-controls="refinement-xiphos-3"
+															aria-selected="false">3</button>
+													</li>
+													<li class="nav-item">
+														<button class="nav-link" id="refinement-xiphos-4-tab" data-bs-toggle="tab"
+															href="#refinement-xiphos-4" role="tab" aria-controls="refinement-xiphos-4"
+															aria-selected="false">4</button>
+													</li>
+													<li class="nav-item">
+														<button class="nav-link" id="refinement-xiphos-5-tab" data-bs-toggle="tab"
+															href="#refinement-xiphos-5" role="tab" aria-controls="refinement-xiphos-5"
+															aria-selected="false">5</button>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="guides-lore-area hidden">
+										<div class="guides-lore-text-area">
+											<div class="guides-lore-title">
+												Story Summary
+											</div>
+											<p class="guides-lore-text">
+												Xiphos' Moonlight's lore speaks of a sword that glows under the moon, revealing hidden
+												secrets and ancient truths. It was once wielded by a mysterious warrior who roamed the
+												night.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="guides-link-area">
+									<div class="d-flex align-content-center">
+										<div class="guides-link-left me-auto"></div>
+										<div class="guides-link-right ms-auto"></div>
+									</div>
+								</div>
+								<div class="guides-action-area">
+									<div class="d-flex me-auto">
+										<div class="btn-group" role="group" aria-label="">
+											<input type="radio" class="btn-check" name="btnradio-xiphos-moonlight"
+												id="btndescription-xiphos-moonlight" autocomplete="off" checked>
+											<label class="btn btn-outline-primary" for="btndescription-xiphos-moonlight">
+												<i class="fa-solid fa-square-poll-horizontal"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-xiphos-moonlight"
+												id="btneffect-xiphos-moonlight" autocomplete="off">
+											<label class="btn btn-outline-primary" for="btneffect-xiphos-moonlight">
+												<i class="fa-solid fa-fire-flame-curved"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-xiphos-moonlight"
+												id="btnlore-xiphos-moonlight" autocomplete="off">
+											<label class="btn btn-outline-primary" for="btnlore-xiphos-moonlight">
+												<i class="fa-solid fa-book"></i>
+											</label>
+										</div>
+									</div>
+									<a class="main-link main-link-outline">See More <span>↗</span></a>
+								</div>
+							</div>
+						</div>
+						<!-- Dark Iron Sword -->
+						<div class="col-md-3 guides-card-weapon" id="card-dark-iron-sword">
+							<div class="guides-area-weapon">
+								<div class="guides-weapon-main-area">
+									<div class="flag flag-weapon">
+										<div class="flag-content">
+											<span class="material-symbols-rounded">
+												swords
+											</span>
+										</div>
+									</div>
+									<div class="guides-description-area">
+										<div class="guides-header-area">
+											<div class="guides-header-weapon header-weapon-threestars">
+												<div class="weapon-avatar weapon-dark-iron-sword">
+												</div>
+											</div>
+											<div class="guides-header-main-info">
+												<div class="guides-header-main-name mb-0">
+													Dark Iron Sword
+												</div>
+											</div>
+										</div>
+										<div class="guides-weapon-description-text-area">
+											<div class="char-banner-text">Spotlight:</div>
+											<p class="guides-description-weapon-text">
+												A perfectly ordinary iron sword, just slightly darker than most.
+											</p>
+										</div>
+										<div class="weapon-banner-level">Lv. 90</div>
+										<div class="row w-100">
+											<div class="col">
+												<div class="char-banner-text">
+													Base Atk:
+												</div>
+												<div class="char-banner-element-content">
+													<p>401</p>
+												</div>
+											</div>
+											<div class="col p-0">
+												<div class="char-banner-text">
+													Elemental Mastery:
+												</div>
+												<div class="char-banner-element-content">
+													<p>141</p>
+												</div>
+											</div>
+										</div>
+										<div class="guides-description-weapon-info-area">
+											<div class="row w-100">
+												<div class="col">
+													<div class="char-banner-rarity me-auto">
+														<div class="char-banner-text">
+															Weapon:
+														</div>
+														<div class="char-banner-weapon-content char-banner-weapon">
+															<div class="icon-weapon weapon-sword">
+															</div>
+															<p>Sword</p>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="char-banner-rarity me-auto">
+														<div class="char-banner-text">
+															Rarity:
+														</div>
+														<div class="char-stars">
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star"></i>
+															<i class="bi bi-star"></i>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="guides-effect-area hidden">
+										<div class="guides-effect-area-text">
+											<div class="guides-effect-title">
+												Overloaded
+											</div>
+											<div class="tab-content guides-effect-description-text" id="Refinementdarkiron">
+												<div class="tab-pane fade show active" id="refinement-darkiron-1" role="tabpanel"
+													aria-labelledby="refinement-darkiron-1-tab">
+													Increases Elemental Mastery by <span>80</span> after triggering an Electro-related
+													Elemental Reaction for 12s.
+												</div>
+												<div class="tab-pane fade" id="refinement-darkiron-2" role="tabpanel"
+													aria-labelledby="refinement-darkiron-2-tab">
+													Increases Elemental Mastery by <span>100</span> after triggering an Electro-related
+													Elemental Reaction for 12s.
+												</div>
+												<div class="tab-pane fade" id="refinement-darkiron-3" role="tabpanel"
+													aria-labelledby="refinement-darkiron-3-tab">
+													Increases Elemental Mastery by <span>120</span> after triggering an Electro-related
+													Elemental Reaction for 12s.
+												</div>
+												<div class="tab-pane fade" id="refinement-darkiron-4" role="tabpanel"
+													aria-labelledby="refinement-darkiron-4-tab">
+													Increases Elemental Mastery by <span>140</span> after triggering an Electro-related
+													Elemental Reaction for 12s.
+												</div>
+												<div class="tab-pane fade" id="refinement-darkiron-5" role="tabpanel"
+													aria-labelledby="refinement-darkiron-5-tab">
+													Increases Elemental Mastery by <span>160</span> after triggering an Electro-related
+													Elemental Reaction for 12s.
+												</div>
+											</div>
+										</div>
+										<div class="nav-tabs-refinement">
+											<div class="guides-effect-refinement-title">
+												Refinement:
+											</div>
+											<div class="ms-auto">
+												<ul class="nav nav-tabs" id="Refinement-darkironTab" role="tablist">
+													<li class="nav-item">
+														<button class="nav-link active" id="refinement-darkiron-1-tab" data-bs-toggle="tab"
+															href="#refinement-darkiron-1" role="tab" aria-controls="refinement-darkiron-1"
+															aria-selected="true">1</button>
+													</li>
+													<li class="nav-item">
+														<button class="nav-link" id="refinement-darkiron-2-tab" data-bs-toggle="tab"
+															href="#refinement-darkiron-2" role="tab" aria-controls="refinement-darkiron-2"
+															aria-selected="false">2</button>
+													</li>
+													<li class="nav-item">
+														<button class="nav-link" id="refinement-darkiron-3-tab" data-bs-toggle="tab"
+															href="#refinement-darkiron-3" role="tab" aria-controls="refinement-darkiron-3"
+															aria-selected="false">3</button>
+													</li>
+													<li class="nav-item">
+														<button class="nav-link" id="refinement-darkiron-4-tab" data-bs-toggle="tab"
+															href="#refinement-darkiron-4" role="tab" aria-controls="refinement-darkiron-4"
+															aria-selected="false">4</button>
+													</li>
+													<li class="nav-item">
+														<button class="nav-link" id="refinement-darkiron-5-tab" data-bs-toggle="tab"
+															href="#refinement-darkiron-5" role="tab" aria-controls="refinement-darkiron-5"
+															aria-selected="false">5</button>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="guides-lore-area hidden">
+										<div class="guides-lore-text-area">
+											<div class="guides-lore-title">
+												Story Summary
+											</div>
+											<p class="guides-lore-text">
+												A perfectly ordinary iron sword, just slightly darker than most. It was once the prized
+												possession of a now-forgotten adventurer.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="guides-link-area">
+									<div class="d-flex align-content-center">
+										<div class="guides-link-left me-auto"></div>
+										<div class="guides-link-right ms-auto"></div>
+									</div>
+								</div>
+								<div class="guides-action-area">
+									<div class="d-flex me-auto">
+										<div class="btn-group" role="group" aria-label="">
+											<input type="radio" class="btn-check" name="btnradio-dark-iron-sword"
+												id="btndescription-dark-iron-sword" autocomplete="off" checked>
+											<label class="btn btn-outline-primary" for="btndescription-dark-iron-sword">
+												<i class="fa-solid fa-square-poll-horizontal"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-dark-iron-sword"
+												id="btneffect-dark-iron-sword" autocomplete="off">
+											<label class="btn btn-outline-primary" for="btneffect-dark-iron-sword">
+												<i class="fa-solid fa-fire-flame-curved"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-dark-iron-sword" id="btnlore-dark-iron-sword"
+												autocomplete="off">
+											<label class="btn btn-outline-primary" for="btnlore-dark-iron-sword">
+												<i class="fa-solid fa-book"></i>
+											</label>
+										</div>
+									</div>
+									<a class="main-link main-link-outline">See More <span>↗</span></a>
+								</div>
+							</div>
+						</div>
+						<!-- Toukabou Shigure -->
+						<div class="col-md-3 guides-card-weapon hidden" id="card-toukabou-shigure">
+							<div class="guides-area-weapon">
+								<div class="guides-weapon-main-area">
+									<div class="flag flag-weapon">
+										<div class="flag-content">
+											<span class="material-symbols-rounded">
+												swords
+											</span>
+										</div>
+									</div>
+									<div class="guides-description-area">
+										<div class="guides-header-area">
+											<div class="guides-header-weapon header-weapon-fourstars">
+												<div class="weapon-avatar weapon-toukabou-shigure">
+												</div>
+											</div>
+											<div class="guides-header-main-info">
+												<div class="guides-header-main-name mb-0">
+													Toukabou Shigure
+												</div>
+											</div>
+										</div>
+										<div class="guides-weapon-description-text-area">
+											<div class="char-banner-text">Spotlight:</div>
+											<p class="guides-description-weapon-text">
+												A mystical blade that summons the power of a summer storm, bringing rain and lightning upon
+												its foes.
+											</p>
+										</div>
+										<div class="weapon-banner-level">Lv. 90</div>
+										<div class="row w-100">
+											<div class="col">
+												<div class="char-banner-text">
+													Base Atk:
+												</div>
+												<div class="char-banner-element-content">
+													<p>510</p>
+												</div>
+											</div>
+											<div class="col p-0">
+												<div class="char-banner-text">
+													Elemental Mastery:
+												</div>
+												<div class="char-banner-element-content">
+													<p>165</p>
+												</div>
+											</div>
+										</div>
+										<div class="guides-description-weapon-info-area">
+											<div class="row w-100">
+												<div class="col">
+													<div class="char-banner-rarity me-auto">
+														<div class="char-banner-text">
+															Weapon:
+														</div>
+														<div class="char-banner-weapon-content char-banner-weapon">
+															<div class="icon-weapon weapon-sword">
+															</div>
+															<p>Sword</p>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="char-banner-rarity me-auto">
+														<div class="char-banner-text">
+															Rarity:
+														</div>
+														<div class="char-stars">
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star"></i>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="guides-effect-area hidden">
+										<div class="guides-effect-area-text">
+											<div class="guides-effect-title">
+												Storm Summoner
+											</div>
+											<div class="tab-content guides-effect-description-text" id="Refinementtoukabou">
+												<div class="tab-pane fade show active" id="refinement-toukabou-1" role="tabpanel"
+													aria-labelledby="refinement-toukabou-1-tab">
+													After using an Elemental Skill, increases Elemental Mastery by <span>40</span> and ATK by
+													<span>10%</span> for 10s.
+												</div>
+												<div class="tab-pane fade" id="refinement-toukabou-2" role="tabpanel"
+													aria-labelledby="refinement-toukabou-2-tab">
+													After using an Elemental Skill, increases Elemental Mastery by <span>50</span> and ATK by
+													<span>12.5%</span> for 10s.
+												</div>
+												<div class="tab-pane fade" id="refinement-toukabou-3" role="tabpanel"
+													aria-labelledby="refinement-toukabou-3-tab">
+													After using an Elemental Skill, increases Elemental Mastery by <span>60</span> and ATK by
+													<span>15%</span> for 10s.
+												</div>
+												<div class="tab-pane fade" id="refinement-toukabou-4" role="tabpanel"
+													aria-labelledby="refinement-toukabou-4-tab">
+													After using an Elemental Skill, increases Elemental Mastery by <span>70</span> and ATK by
+													<span>17.5%</span> for 10s.
+												</div>
+												<div class="tab-pane fade" id="refinement-toukabou-5" role="tabpanel"
+													aria-labelledby="refinement-toukabou-5-tab">
+													After using an Elemental Skill, increases Elemental Mastery by <span>80</span> and ATK by
+													<span>20%</span> for 10s.
+												</div>
+											</div>
+										</div>
+										<div class="nav-tabs-refinement">
+											<div class="guides-effect-refinement-title">
+												Refinement:
+											</div>
+											<div class="ms-auto">
+												<ul class="nav nav-tabs" id="Refinement-toukabouTab" role="tablist">
+													<li class="nav-item">
+														<button class="nav-link active" id="refinement-toukabou-1-tab" data-bs-toggle="tab"
+															href="#refinement-toukabou-1" role="tab" aria-controls="refinement-toukabou-1"
+															aria-selected="true">1</button>
+													</li>
+													<li class="nav-item">
+														<button class="nav-link" id="refinement-toukabou-2-tab" data-bs-toggle="tab"
+															href="#refinement-toukabou-2" role="tab" aria-controls="refinement-toukabou-2"
+															aria-selected="false">2</button>
+													</li>
+													<li class="nav-item">
+														<button class="nav-link" id="refinement-toukabou-3-tab" data-bs-toggle="tab"
+															href="#refinement-toukabou-3" role="tab" aria-controls="refinement-toukabou-3"
+															aria-selected="false">3</button>
+													</li>
+													<li class="nav-item">
+														<button class="nav-link" id="refinement-toukabou-4-tab" data-bs-toggle="tab"
+															href="#refinement-toukabou-4" role="tab" aria-controls="refinement-toukabou-4"
+															aria-selected="false">4</button>
+													</li>
+													<li class="nav-item">
+														<button class="nav-link" id="refinement-toukabou-5-tab" data-bs-toggle="tab"
+															href="#refinement-toukabou-5" role="tab" aria-controls="refinement-toukabou-5"
+															aria-selected="false">5</button>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="guides-lore-area hidden">
+										<div class="guides-lore-text-area">
+											<div class="guides-lore-title">
+												Story Summary
+											</div>
+											<p class="guides-lore-text">
+												Toukabou Shigure is a blade that has been passed down through generations, its power growing
+												with each new wielder. It is said to contain the essence of a summer storm, bringing rain
+												and lightning to those who command it.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="guides-link-area">
+									<div class="d-flex align-content-center">
+										<div class="guides-link-left me-auto"></div>
+										<div class="guides-link-right ms-auto"></div>
+									</div>
+								</div>
+								<div class="guides-action-area">
+									<div class="d-flex me-auto">
+										<div class="btn-group" role="group" aria-label="">
+											<input type="radio" class="btn-check" name="btnradio-toukabou-shigure"
+												id="btndescription-toukabou-shigure" autocomplete="off" checked>
+											<label class="btn btn-outline-primary" for="btndescription-toukabou-shigure">
+												<i class="fa-solid fa-square-poll-horizontal"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-toukabou-shigure"
+												id="btneffect-toukabou-shigure" autocomplete="off">
+											<label class="btn btn-outline-primary" for="btneffect-toukabou-shigure">
+												<i class="fa-solid fa-fire-flame-curved"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-toukabou-shigure"
+												id="btnlore-toukabou-shigure" autocomplete="off">
+											<label class="btn btn-outline-primary" for="btnlore-toukabou-shigure">
+												<i class="fa-solid fa-book"></i>
+											</label>
+										</div>
+									</div>
+									<a class="main-link main-link-outline">See More <span>↗</span></a>
+								</div>
+							</div>
+						</div>
+						<!-- Primordial Jade Cutter -->
+						<div class="col-md-3 guides-card-weapon hidden" id="card-primordial-jade-cutter">
+							<div class="guides-area-weapon">
+								<div class="guides-weapon-main-area">
+									<div class="flag flag-weapon">
+										<div class="flag-content">
+											<span class="material-symbols-rounded">
+												swords
+											</span>
+										</div>
+									</div>
+									<div class="guides-description-area">
+										<div class="guides-header-area">
+											<div class="guides-header-weapon header-weapon-fivestars">
+												<div class="weapon-avatar weapon-primordial-jade-cutter">
+												</div>
+											</div>
+											<div class="guides-header-main-info">
+												<div class="guides-header-main-name mb-0">
+													Primordial Jade Cutter
+												</div>
+											</div>
+										</div>
+										<div class="guides-weapon-description-text-area">
+											<div class="char-banner-text">Spotlight:</div>
+											<p class="guides-description-weapon-text">
+												A ceremonial sword masterfully carved from pure jade. It once belonged to a hero who wielded
+												it to vanquish evil.
+											</p>
+										</div>
+										<div class="weapon-banner-level">Lv. 90</div>
+										<div class="row w-100">
+											<div class="col">
+												<div class="char-banner-text">
+													Base Atk:
+												</div>
+												<div class="char-banner-element-content">
+													<p>542</p>
+												</div>
+											</div>
+											<div class="col">
+												<div class="char-banner-text">
+													CRIT Rate:
+												</div>
+												<div class="char-banner-element-content">
+													<p>44.1%</p>
+												</div>
+											</div>
+										</div>
+										<div class="guides-description-weapon-info-area">
+											<div class="row w-100">
+												<div class="col">
+													<div class="char-banner-rarity me-auto">
+														<div class="char-banner-text">
+															Weapon:
+														</div>
+														<div class="char-banner-weapon-content char-banner-weapon">
+															<div class="icon-weapon weapon-sword">
+															</div>
+															<p>Sword</p>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="char-banner-rarity me-auto">
+														<div class="char-banner-text">
+															Rarity:
+														</div>
+														<div class="char-stars">
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="guides-effect-area hidden">
+										<div class="guides-effect-area-text">
+											<div class="guides-effect-title">
+												Protector's Virtue
+											</div>
+											<div class="tab-content guides-effect-description-text" id="RefinementTab-primordialjadecutter">
+												<div class="tab-pane fade show active" id="refinement-primordialjadecutter-1" role="tabpanel"
+													aria-labelledby="refinement-primordialjadecutter-1-tab">
+													Increases HP by <span>20%</span>. Additionally, provides an ATK Bonus based on
+													<span>1.2%</span> of the wielder's max HP.
+												</div>
+												<div class="tab-pane fade" id="refinement-primordialjadecutter-2" role="tabpanel"
+													aria-labelledby="refinement-primordialjadecutter-2-tab">
+													Increases HP by <span>25%</span>. Additionally, provides an ATK Bonus based on
+													<span>1.5%</span> of the wielder's max HP.
+												</div>
+												<div class="tab-pane fade" id="refinement-primordialjadecutter-3" role="tabpanel"
+													aria-labelledby="refinement-primordialjadecutter-3-tab">
+													Increases HP by <span>30%</span>. Additionally, provides an ATK Bonus based on
+													<span>1.8%</span> of the wielder's max HP.
+												</div>
+												<div class="tab-pane fade" id="refinement-primordialjadecutter-4" role="tabpanel"
+													aria-labelledby="refinement-primordialjadecutter-4-tab">
+													Increases HP by <span>35%</span>. Additionally, provides an ATK Bonus based on
+													<span>2.1%</span> of the wielder's max HP.
+												</div>
+												<div class="tab-pane fade" id="refinement-primordialjadecutter-5" role="tabpanel"
+													aria-labelledby="refinement-primordialjadecutter-5-tab">
+													Increases HP by <span>40%</span>. Additionally, provides an ATK Bonus based on
+													<span>2.4%</span> of the wielder's max HP.
+												</div>
+											</div>
+										</div>
+										<div class="nav-tabs-refinement">
+											<div class="guides-effect-refinement-title">
+												Refinement:
+											</div>
+											<div class="ms-auto">
+												<ul class="nav nav-tabs" id="RefinementTab" role="tablist">
+													<li class="nav-item">
+														<button class="nav-link active" id="refinement-primordialjadecutter-1-tab"
+															data-bs-toggle="tab" href="#refinement-primordialjadecutter-1" role="tab"
+															aria-controls="refinement-primordialjadecutter-1" aria-selected="true">1</button>
+													</li>
+													<li class="nav-item">
+														<button class="nav-link" id="refinement-primordialjadecutter-2-tab" data-bs-toggle="tab"
+															href="#refinement-primordialjadecutter-2" role="tab"
+															aria-controls="refinement-primordialjadecutter-2" aria-selected="false">2</button>
+													</li>
+													<li class="nav-item">
+														<button class="nav-link" id="refinement-primordialjadecutter-3-tab" data-bs-toggle="tab"
+															href="#refinement-primordialjadecutter-3" role="tab"
+															aria-controls="refinement-primordialjadecutter-3" aria-selected="false">3</button>
+													</li>
+													<li class="nav-item">
+														<button class="nav-link" id="refinement-primordialjadecutter-4-tab" data-bs-toggle="tab"
+															href="#refinement-primordialjadecutter-4" role="tab"
+															aria-controls="refinement-primordialjadecutter-4" aria-selected="false">4</button>
+													</li>
+													<li class="nav-item">
+														<button class="nav-link" id="refinement-primordialjadecutter-5-tab" data-bs-toggle="tab"
+															href="#refinement-primordialjadecutter-5" role="tab"
+															aria-controls="refinement-primordialjadecutter-5" aria-selected="false">5</button>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="guides-lore-area hidden">
+										<div class="guides-lore-text-area">
+											<div class="guides-lore-title">
+												Story Summary
+											</div>
+											<p class="guides-lore-text">
+												Primordial Jade Cutter's lore tells of a sword masterfully carved from jade that symbolizes
+												purity and courage. It was once used by a legendary hero to vanquish evil and protect the
+												innocent.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="guides-link-area">
+									<div class="d-flex align-content-center">
+										<div class="guides-link-left me-auto"></div>
+										<div class="guides-link-right ms-auto"></div>
+									</div>
+								</div>
+								<div class="guides-action-area">
+									<div class="d-flex me-auto">
+										<div class="btn-group" role="group" aria-label="">
+											<input type="radio" class="btn-check" name="btnradio-primordial-jade-cutter"
+												id="btndescription-primordial-jade-cutter" autocomplete="off" checked>
+											<label class="btn btn-outline-primary" for="btndescription-primordial-jade-cutter">
+												<i class="fa-solid fa-square-poll-horizontal"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-primordial-jade-cutter"
+												id="btneffect-primordial-jade-cutter" autocomplete="off">
+											<label class="btn btn-outline-primary" for="btneffect-primordial-jade-cutter">
+												<i class="fa-solid fa-fire-flame-curved"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-primordial-jade-cutter"
+												id="btnlore-primordial-jade-cutter" autocomplete="off">
+											<label class="btn btn-outline-primary" for="btnlore-primordial-jade-cutter">
+												<i class="fa-solid fa-book"></i>
+											</label>
+										</div>
+									</div>
+									<a class="main-link main-link-outline">See More <span>↗</span></a>
+								</div>
+							</div>
+						</div>
+						<!-- Seasoned Hunter's Bow -->
+						<div class="col-md-3 guides-card-weapon hidden" id="card-seasoned-hunters-bow">
+							<div class="guides-area-weapon">
+								<div class="guides-weapon-main-area">
+									<div class="flag flag-weapon">
+										<div class="flag-content">
+											<span class="material-symbols-rounded">
+												swords
+											</span>
+										</div>
+									</div>
+									<div class="guides-description-area">
+										<div class="guides-header-area">
+											<div class="guides-header-weapon header-weapon-twostars">
+												<div class="weapon-avatar weapon-seasoned-hunters-bow">
+												</div>
+											</div>
+											<div class="guides-header-main-info">
+												<div class="guides-header-main-name mb-0">
+													Seasoned Hunter's Bow
+												</div>
+											</div>
+										</div>
+										<div class="guides-weapon-description-text-area">
+											<div class="char-banner-text">Spotlight:</div>
+											<p class="guides-description-weapon-text">
+												A basic wooden bow. It is practical and durable, and is thus favored by many seasoned
+												hunters.
+											</p>
+										</div>
+										<div class="weapon-banner-level">Lv. 90</div>
+										<div class="row w-100">
+											<div class="col">
+												<div class="char-banner-text">
+													Base Atk:
+												</div>
+												<div class="char-banner-element-content">
+													<p>354</p>
+												</div>
+											</div>
+										</div>
+										<div class="guides-description-weapon-info-area">
+											<div class="row w-100">
+												<div class="col">
+													<div class="char-banner-rarity me-auto">
+														<div class="char-banner-text">
+															Weapon:
+														</div>
+														<div class="char-banner-weapon-content char-banner-weapon">
+															<div class="icon-weapon weapon-bow">
+															</div>
+															<p>Bow</p>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="char-banner-rarity me-auto">
+														<div class="char-banner-text">
+															Rarity:
+														</div>
+														<div class="char-stars">
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star"></i>
+															<i class="bi bi-star"></i>
+															<i class="bi bi-star"></i>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="guides-effect-area hidden">
+										<div class="guides-effect-area-text">
+											<div class="guides-effect-title">
+												None
+											</div>
+											<div class="tab-content guides-effect-description-text" id="RefinementTab-seasonedhuntersbow">
+												<div class="tab-pane fade show active" id="refinement-seasonedhuntersbow-1" role="tabpanel"
+													aria-labelledby="refinement-seasonedhuntersbow-1-tab">
+													No special effects.
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="guides-lore-area hidden">
+										<div class="guides-lore-text-area">
+											<div class="guides-lore-title">
+												Story Summary
+											</div>
+											<p class="guides-lore-text">
+												Seasoned Hunter's Bow is favored by seasoned hunters for its practicality and durability. It
+												is crafted from basic wood but has stood the test of time.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="guides-link-area">
+									<div class="d-flex align-content-center">
+										<div class="guides-link-left me-auto"></div>
+										<div class="guides-link-right ms-auto"></div>
+									</div>
+								</div>
+								<div class="guides-action-area">
+									<div class="d-flex me-auto">
+										<div class="btn-group" role="group" aria-label="">
+											<input type="radio" class="btn-check" name="btnradio-seasoned-hunters-bow"
+												id="btndescription-seasoned-hunters-bow" autocomplete="off" checked>
+											<label class="btn btn-outline-primary" for="btndescription-seasoned-hunters-bow">
+												<i class="fa-solid fa-square-poll-horizontal"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-seasoned-hunters-bow"
+												id="btneffect-seasoned-hunters-bow" autocomplete="off" disabled>
+											<label class="btn btn-outline-primary disabled" for="btneffect-seasoned-hunters-bow">
+												<i class="fa-solid fa-fire-flame-curved"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-seasoned-hunters-bow"
+												id="btnlore-seasoned-hunters-bow" autocomplete="off">
+											<label class="btn btn-outline-primary" for="btnlore-seasoned-hunters-bow">
+												<i class="fa-solid fa-book"></i>
+											</label>
+										</div>
+									</div>
+									<a class="main-link main-link-outline">See More <span>↗</span></a>
+								</div>
+							</div>
+						</div>
+						<!-- Tulaytullah's Remembrance -->
+						<div class="col-md-3 guides-card-weapon hidden" id="card-tulaytullahs-remembrance">
+							<div class="guides-area-weapon">
+								<div class="guides-weapon-main-area">
+									<div class="flag flag-weapon">
+										<div class="flag-content">
+											<span class="material-symbols-rounded">
+												swords
+											</span>
+										</div>
+									</div>
+									<div class="guides-description-area">
+										<div class="guides-header-area">
+											<div class="guides-header-weapon header-weapon-fivestars">
+												<div class="weapon-avatar weapon-tulaytullahs-remembrance">
+												</div>
+											</div>
+											<div class="guides-header-main-info">
+												<div class="guides-header-main-name mb-0">
+													Tulaytullah's Remembrance
+												</div>
+											</div>
+										</div>
+										<div class="guides-weapon-description-text-area">
+											<div class="char-banner-text">Spotlight:</div>
+											<p class="guides-description-weapon-text">
+												A powerful catalyst that resonates with the memories of an ancient civilization, granting
+												its wielder incredible power.
+											</p>
+										</div>
+										<div class="weapon-banner-level">Lv. 90</div>
+										<div class="row w-100">
+											<div class="col">
+												<div class="char-banner-text">
+													Base Atk:
+												</div>
+												<div class="char-banner-element-content">
+													<p>674</p>
+												</div>
+											</div>
+											<div class="col">
+												<div class="char-banner-text">
+													CRIT DMG:
+												</div>
+												<div class="char-banner-element-content">
+													<p>44.1%</p>
+												</div>
+											</div>
+										</div>
+										<div class="guides-description-weapon-info-area">
+											<div class="row w-100">
+												<div class="col">
+													<div class="char-banner-rarity me-auto">
+														<div class="char-banner-text">
+															Weapon:
+														</div>
+														<div class="char-banner-weapon-content char-banner-weapon">
+															<div class="icon-weapon weapon-catalyst">
+															</div>
+															<p>Catalyst</p>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="char-banner-rarity me-auto">
+														<div class="char-banner-text">
+															Rarity:
+														</div>
+														<div class="char-stars">
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="guides-effect-area hidden">
+										<div class="guides-effect-area-text">
+											<div class="guides-effect-title">
+												Memorial Wisdom
+											</div>
+											<div class="tab-content guides-effect-description-text"
+												id="RefinementTab-tulaytullahs-remembrance">
+												<div class="tab-pane fade show active" id="refinement-tulaytullahs-remembrance-1"
+													role="tabpanel" aria-labelledby="refinement-tulaytullahs-remembrance-1-tab">
+													Increases Normal Attack SPD by <span>10%</span> for 8s after using an Elemental Skill.
+													Increases ATK by <span>4%</span> per second while in use. Max of 5 stacks.
+												</div>
+												<div class="tab-pane fade" id="refinement-tulaytullahs-remembrance-2" role="tabpanel"
+													aria-labelledby="refinement-tulaytullahs-remembrance-2-tab">
+													Increases Normal Attack SPD by <span>12.5%</span> for 8s after using an Elemental Skill.
+													Increases ATK by <span>5%</span> per second while in use. Max of 5 stacks.
+												</div>
+												<div class="tab-pane fade" id="refinement-tulaytullahs-remembrance-3" role="tabpanel"
+													aria-labelledby="refinement-tulaytullahs-remembrance-3-tab">
+													Increases Normal Attack SPD by <span>15%</span> for 8s after using an Elemental Skill.
+													Increases ATK by <span>6%</span> per second while in use. Max of 5 stacks.
+												</div>
+												<div class="tab-pane fade" id="refinement-tulaytullahs-remembrance-4" role="tabpanel"
+													aria-labelledby="refinement-tulaytullahs-remembrance-4-tab">
+													Increases Normal Attack SPD by <span>17.5%</span> for 8s after using an Elemental Skill.
+													Increases ATK by <span>7%</span> per second while in use. Max of 5 stacks.
+												</div>
+												<div class="tab-pane fade" id="refinement-tulaytullahs-remembrance-5" role="tabpanel"
+													aria-labelledby="refinement-tulaytullahs-remembrance-5-tab">
+													Increases Normal Attack SPD by <span>20%</span> for 8s after using an Elemental Skill.
+													Increases ATK by <span>8%</span> per second while in use. Max of 5 stacks.
+												</div>
+											</div>
+										</div>
+										<div class="nav-tabs-refinement">
+											<div class="guides-effect-refinement-title">
+												Refinement:
+											</div>
+											<div class="ms-auto">
+												<ul class="nav nav-tabs" id="RefinementTab" role="tablist">
+													<li class="nav-item">
+														<button class="nav-link active" id="refinement-tulaytullahs-remembrance-1-tab"
+															data-bs-toggle="tab" href="#refinement-tulaytullahs-remembrance-1" role="tab"
+															aria-controls="refinement-tulaytullahs-remembrance-1" aria-selected="true">1</button>
+													</li>
+													<li class="nav-item">
+														<button class="nav-link" id="refinement-tulaytullahs-remembrance-2-tab" data-bs-toggle="tab"
+															href="#refinement-tulaytullahs-remembrance-2" role="tab"
+															aria-controls="refinement-tulaytullahs-remembrance-2" aria-selected="false">2</button>
+													</li>
+													<li class="nav-item">
+														<button class="nav-link" id="refinement-tulaytullahs-remembrance-3-tab" data-bs-toggle="tab"
+															href="#refinement-tulaytullahs-remembrance-3" role="tab"
+															aria-controls="refinement-tulaytullahs-remembrance-3" aria-selected="false">3</button>
+													</li>
+													<li class="nav-item">
+														<button class="nav-link" id="refinement-tulaytullahs-remembrance-4-tab" data-bs-toggle="tab"
+															href="#refinement-tulaytullahs-remembrance-4" role="tab"
+															aria-controls="refinement-tulaytullahs-remembrance-4" aria-selected="false">4</button>
+													</li>
+													<li class="nav-item">
+														<button class="nav-link" id="refinement-tulaytullahs-remembrance-5-tab" data-bs-toggle="tab"
+															href="#refinement-tulaytullahs-remembrance-5" role="tab"
+															aria-controls="refinement-tulaytullahs-remembrance-5" aria-selected="false">5</button>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="guides-lore-area hidden">
+										<div class="guides-lore-text-area">
+											<div class="guides-lore-title">
+												Story Summary
+											</div>
+											<p class="guides-lore-text">
+												Tulaytullah's Remembrance is a powerful catalyst that resonates with the memories of an
+												ancient civilization, granting its wielder incredible power and insight.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="guides-link-area">
+									<div class="d-flex align-content-center">
+										<div class="guides-link-left me-auto"></div>
+										<div class="guides-link-right ms-auto"></div>
+									</div>
+								</div>
+								<div class="guides-action-area">
+									<div class="d-flex me-auto">
+										<div class="btn-group" role="group" aria-label="">
+											<input type="radio" class="btn-check" name="btnradio-tulaytullahs-remembrance"
+												id="btndescription-tulaytullahs-remembrance" autocomplete="off" checked>
+											<label class="btn btn-outline-primary" for="btndescription-tulaytullahs-remembrance">
+												<i class="fa-solid fa-square-poll-horizontal"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-tulaytullahs-remembrance"
+												id="btneffect-tulaytullahs-remembrance" autocomplete="off">
+											<label class="btn btn-outline-primary" for="btneffect-tulaytullahs-remembrance">
+												<i class="fa-solid fa-fire-flame-curved"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-tulaytullahs-remembrance"
+												id="btnlore-tulaytullahs-remembrance" autocomplete="off">
+											<label class="btn btn-outline-primary" for="btnlore-tulaytullahs-remembrance">
+												<i class="fa-solid fa-book"></i>
+											</label>
+										</div>
+									</div>
+									<a class="main-link main-link-outline">See More ↗</a>
+								</div>
+							</div>
+						</div>
+						<!-- Staff of the Scarlet Sands -->
+						<!--<div class="col-md-3 guides-card-weapon hidden" id="card-staff-of-the-scarlet-sands">
+							<div class="guides-area-weapon">
+								<div class="flag flag-weapon">
+									<div class="flag-content">
+										<span class="material-symbols-rounded">
+											swords
+										</span>
+									</div>
+								</div>
+								<div class="guides-weapon-main-area">
+									<div class="guides-description-area">
+										<div class="guides-header-area">
+											<div class="guides-header-weapon header-weapon-fivestars">
+												<div class="weapon-avatar weapon-staff-of-the-scarlet-sands">
+												</div>
+											</div>
+											<div class="guides-header-main-info">
+												<div class="guides-header-main-name mb-0">
+													Staff of the Scarlet Sands
+												</div>
+											</div>
+										</div>
+										<div class="guides-weapon-description-text-area">
+											<div class="char-banner-text">Spotlight:</div>
+											<p class="guides-description-weapon-text">
+												A polearm that once belonged to a king of the desert. It is said to contain the might of the
+												scorching sands.
+											</p>
+										</div>
+										<div class="weapon-banner-level">Lv. 90</div>
+										<div class="row w-100">
+											<div class="col">
+												<div class="char-banner-text">
+													Base Atk:
+												</div>
+												<div class="char-banner-element-content">
+													<p>674</p>
+												</div>
+											</div>
+											<div class="col">
+												<div class="char-banner-text">
+													CRIT Rate:
+												</div>
+												<div class="char-banner-element-content">
+													<p>44.1%</p>
+												</div>
+											</div>
+										</div>
+										<div class="guides-description-weapon-info-area">
+											<div class="row w-100">
+												<div class="col">
+													<div class="char-banner-rarity me-auto">
+														<div class="char-banner-text">
+															Weapon:
+														</div>
+														<div class="char-banner-weapon-content char-banner-weapon">
+															<div class="icon-weapon weapon-polearm">
+															</div>
+															<p>Polearm</p>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="char-banner-rarity me-auto">
+														<div class="char-banner-text">
+															Rarity:
+														</div>
+														<div class="char-stars">
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+															<i class="bi bi-star-fill"></i>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="guides-effect-area hidden">
+										<div class="guides-effect-area-text">
+											<div class="guides-effect-title">
+												Heat Haze at Horizon's End
+											</div>
+											<div class="tab-content guides-effect-description-text"
+												id="RefinementTab-staff-of-the-scarlet-sands">
+												<div class="tab-pane fade show active" id="refinement-staff-of-the-scarlet-sands-1"
+													role="tabpanel" aria-labelledby="refinement-staff-of-the-scarlet-sands-1-tab">
+													The equipping character gains <span>52%</span> of their Elemental Mastery as bonus ATK.
+													When an Elemental Skill hits opponents, the Dream of the Scarlet Sands effect will be
+													gained for 10s: the equipping character will gain <span>28%</span> of their Elemental
+													Mastery as bonus ATK. Max 3 stacks.
+												</div>
+												<div class="tab-pane fade" id="refinement-staff-of-the-scarlet-sands-2" role="tabpanel"
+													aria-labelledby="refinement-staff-of-the-scarlet-sands-2-tab">
+													The equipping character gains <span>65%</span> of their Elemental Mastery as bonus ATK.
+													When an Elemental Skill hits opponents, the Dream of the Scarlet Sands effect will be
+													gained for 10s: the equipping character will gain <span>35%</span> of their Elemental
+													Mastery as bonus ATK. Max 3 stacks.
+												</div>
+												<div class="tab-pane fade" id="refinement-staff-of-the-scarlet-sands-3" role="tabpanel"
+													aria-labelledby="refinement-staff-of-the-scarlet-sands-3-tab">
+													The equipping character gains <span>78%</span> of their Elemental Mastery as bonus ATK.
+													When an Elemental Skill hits opponents, the Dream of the Scarlet Sands effect will be
+													gained for 10s: the equipping character will gain <span>42%</span> of their Elemental
+													Mastery as bonus ATK. Max 3 stacks.
+												</div>
+												<div class="tab-pane fade" id="refinement-staff-of-the-scarlet-sands-4" role="tabpanel"
+													aria-labelledby="refinement-staff-of-the-scarlet-sands-4-tab">
+													The equipping character gains <span>91%</span> of their Elemental Mastery as bonus ATK.
+													When an Elemental Skill hits opponents, the Dream of the Scarlet Sands effect will be
+													gained for 10s: the equipping character will gain <span>49%</span> of their Elemental
+													Mastery as bonus ATK. Max 3 stacks.
+												</div>
+												<div class="tab-pane fade" id="refinement-staff-of-the-scarlet-sands-5" role="tabpanel"
+													aria-labelledby="refinement-staff-of-the-scarlet-sands-5-tab">
+													The equipping character gains <span>104%</span> of their Elemental Mastery as bonus ATK.
+													When an Elemental Skill hits opponents, the Dream of the Scarlet Sands effect will be
+													gained for 10s: the equipping character will gain <span>56%</span> of their Elemental
+													Mastery as bonus ATK. Max 3 stacks.
+												</div>
+											</div>
+										</div>
+										<div class="nav-tabs-refinement">
+											<div class="guides-effect-refinement-title">
+												Refinement:
+											</div>
+											<div class="ms-auto">
+												<ul class="nav nav-tabs" id="RefinementTab" role="tablist">
+													<li class="nav-item">
+														<button class="nav-link active" id="refinement-staff-of-the-scarlet-sands-1-tab"
+															data-bs-toggle="tab" href="#refinement-staff-of-the-scarlet-sands-1" role="tab"
+															aria-controls="refinement-staff-of-the-scarlet-sands-1" aria-selected="true">1</button>
+													</li>
+													<li class="nav-item">
+														<button class="nav-link" id="refinement-staff-of-the-scarlet-sands-2-tab" data-bs-toggle="tab"
+															href="#refinement-staff-of-the-scarlet-sands-2" role="tab"
+															aria-controls="refinement-staff-of-the-scarlet-sands-2" aria-selected="false">2</button>
+													</li>
+													<li class="nav-item">
+														<button class="nav-link" id="refinement-staff-of-the-scarlet-sands-3-tab" data-bs-toggle="tab"
+															href="#refinement-staff-of-the-scarlet-sands-3" role="tab"
+															aria-controls="refinement-staff-of-the-scarlet-sands-3" aria-selected="false">3</button>
+													</li>
+													<li class="nav-item">
+														<button class="nav-link" id="refinement-staff-of-the-scarlet-sands-4-tab" data-bs-toggle="tab"
+															href="#refinement-staff-of-the-scarlet-sands-4" role="tab"
+															aria-controls="refinement-staff-of-the-scarlet-sands-4" aria-selected="false">4</button>
+													</li>
+													<li class="nav-item">
+														<button class="nav-link" id="refinement-staff-of-the-scarlet-sands-5-tab" data-bs-toggle="tab"
+															href="#refinement-staff-of-the-scarlet-sands-5" role="tab"
+															aria-controls="refinement-staff-of-the-scarlet-sands-5" aria-selected="false">5</button>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="guides-lore-area hidden">
+										<div class="guides-lore-text-area">
+											<div class="guides-lore-title">
+												Story Summary
+											</div>
+											<p class="guides-lore-text">
+												Staff of the Scarlet Sands is a polearm that once belonged to a king of the desert. It is
+												said to contain the might of the scorching sands, capable of bringing forth great power.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="guides-link-area">
+									<div class="d-flex align-content-center">
+										<div class="guides-link-left me-auto"></div>
+										<div class="guides-link-right ms-auto"></div>
+									</div>
+								</div>
+								<div class="guides-action-area">
+									<div class="d-flex me-auto">
+										<div class="btn-group" role="group" aria-label="">
+											<input type="radio" class="btn-check" name="btnradio-staff-of-the-scarlet-sands"
+												id="btndescription-staff-of-the-scarlet-sands" autocomplete="off" checked>
+											<label class="btn btn-outline-primary" for="btndescription-staff-of-the-scarlet-sands">
+												<i class="fa-solid fa-square-poll-horizontal"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-staff-of-the-scarlet-sands"
+												id="btneffect-staff-of-the-scarlet-sands" autocomplete="off">
+											<label class="btn btn-outline-primary" for="btneffect-staff-of-the-scarlet-sands">
+												<i class="fa-solid fa-fire-flame-curved"></i>
+											</label>
+											<input type="radio" class="btn-check" name="btnradio-staff-of-the-scarlet-sands"
+												id="btnlore-staff-of-the-scarlet-sands" autocomplete="off">
+											<label class="btn btn-outline-primary" for="btnlore-staff-of-the-scarlet-sands">
+												<i class="fa-solid fa-book"></i>
+											</label>
+										</div>
+									</div>
+									<a class="main-link main-link-outline">See More ↗</a>
+								</div>
+							</div>
+						</div>-->
+						<!-- Load More -->
+						<div class="load-more">
+							<button id="load-more-weapon" class="btn btn-primary main-link btn-load load-more-weapon">
+								Load more
+							</button>
+							<div id="spinner-weapon" role="status" class="hidden" margin: auto;">
+								<button class="btn-loading" type="button" disabled>
+									<span class="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
+									<span role="status ms-2">Loading...</span>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="caption-signature">
+						<div>
+							<p class="fw-light m-0 m	'-0">See the collection of<br><span class="fw-bold">Weapons</span></p>
+						</div>
+						<div class="ms-auto">
+							<a href="" class="main-link">
+								See More <span>↗</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--  Contact -->
+				<div class="contact-content" id="scrollContact">
+					<div class="caption-frame">
+						<p class="caption-number">07.</p>
+						<div class="d-block">
+							<h3 class="caption-title"><span>について</span><br>Contact</h3>
+						</div>
+					</div>
+					<div class="caption-hr"></div>
+					<div class="row">
+						<!-- OUR Project -->
+						<div class="col-md-6">
+							<div class="contact">
+								<p class="contact-title">Presentation</p>
+								<div class="contact-area">
+									<p class="contact-text">
+										This is my
+										<span tabindex="0" class="athena-name" data-bs-placement="top" data-bs-toggle="popover"
+											data-bs-trigger="hover focus" data-bs-custom-class="caption-popover"
+											data-bs-title="Project Athena"
+											data-bs-content="ⓘ Above all else, Athena is a project that combines my skills as a designer and programmer. You can find it in my portfolio.">
+											Athena</span>
+										project. <br><br>
+										It's one of my personal projects into which I pour great care and countless hours of study
+										across various fields: design, programming, UI/UX, and more.
+										In addition to having fun developing these projects, I feel like I'm constantly learning more
+										and more. Thank you, Athena.<br><br>
+										If you liked it, feel free to send me feedback via <a class="main-text-link"
+											href="https://www.linkedin.com/in/victorpirescampos/" target="_blank">Linkedin</a> or email.
+										My Discord is also available. <br>
+										I'm ready for new projects and challenges.
+									</p>
+									<hr>
+									<div class="row">
+										<div class="col-3 pe-0">
+											<p class="">Discord</p>
+											<button class="copy-button" data-target="discord">
+												<p class="m-0 pe-auto" id="discord">iamvici</p>
+												<i class="fa-solid fa-copy"></i>
+											</button>
+										</div>
+										<div class="col-9">
+											<p class="">Email</p>
+											<button class="copy-button" data-target="email">
+												<p class="m-0 pe-auto" id="email">victorpires.camposs@gmail.com</p>
+												<i class="fa-solid fa-copy"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Form -->
+						<div class="col-md-6 myform">
+							<div>
+								<p class="contact-title">Send me a message</p>
+								<form class="form" target="_blank" action="https://formsubmit.co/victorpires.camposs@gmail.com"
+									method="POST">
+									<!-- Hidden Captcha -->
+									<input type="hidden" name="_captcha" value="false">
+									<input type="hidden" name="_autoresponse" value="I got your message! I'll reply as soon as I see it.">
+									<!-- Directions after filling in the form -->
+									<input type="hidden" name="_next" value="thankyou.html">
+									<!-- BodyForm -->
+									<div class="form-group">
+										<div class="">
+											<!-- Name -->
+											<label class="label" for="name">Name:</label>
+											<input type="text" name="name" class="form-control" placeholder="What should I call you?"
+												id="name" required>
+											<!-- Email -->
+											<label class="label pt-2" for="name">Email:</label>
+											<input type="email" name="email" class="form-control" placeholder="Your best e-mail, please."
+												id="email" required>
+										</div>
+										<div class="pt-2">
+											<!-- Mesage -->
+											<label class="label" for="name">Message:</label>
+											<textarea placeholder="Send me something cool." class="form-control form-textarea" name="message"
+												rows="10" id="message" required></textarea>
+										</div>
+									</div>
+									<div>
+										<div class="message-info">
+											<i class="bi bi-info-square-fill pe-1"></i>
+											<p class="p-0 m-0">Message to: <span>victorpires.camposs@gmail.com</span>.</p>
+										</div>
+										<button type="submit" class="btn btn-primary main-link btn-form"></i>Submit</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="signature">
+						Athena is not yet complete. I intend to continue developing it until it reaches its peak.<br>
+						<!--<a class="main-link" href="#scrollHome">Scroll Up</a>-->
+					</div>
+				</div>
+				<p class="athena-version">Current Version:<span>v0.1b</span></p>
+			</div>
+		</div>
+	</main>
+
+	    <!-- Bootstrap JS e Popper.js (necessários) -->
+			<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+	<script>
+		const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+		const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+	</script>
+
+	<!-- Biblioteca jQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!-- Biblioteca do Bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../src/scripts/components/infinite-scroll/infinite-scroll.js"></script>
+	<script src="../../../../../components/global/common/tooltip.js"></script>
+	<script src="../../../../../components/global/common/popover.js"></script>
+	<script src="../../../../../components/global/common/side-scrolling.js"></script>
+
+	<script>
+
+		const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+		const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
+		const tabEl = document.querySelector('button[data-bs-toggle="tab"]')
+		tabEl.addEventListener('shown.bs.tab', event => {
+			event.target
+			event.relatedTarget
+		})
+	</script>
+	<script src="../../../../../components/gameSpecific/genshinImpact/views/home/caption-carousel.js"></script>
+	<script src="../../../../../components/gameSpecific/genshinImpact/views/home/guides-tabchar.js"></script>
+	<script src="../../../../../components/gameSpecific/genshinImpact/views/home/guides-tabweapon.js"></script>
+	<script src="../../../../../components/gameSpecific/genshinImpact/views/home/guide-video.js"></script>
+</body>
+
+</html>

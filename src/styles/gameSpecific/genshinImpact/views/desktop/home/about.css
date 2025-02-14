@@ -1,0 +1,20 @@
+.about-content {
+  margin: 32px 0;
+}
+
+.about-video {
+  width: 100% !important;
+  height: 320px !important;
+  object-fit: cover !important;
+  border-radius: 16px;
+}
+
+.athena-version {
+  font-size: 12px;
+  color: var(--mygray-50);
+}
+
+.athena-version span {
+  padding-left: 8px;
+  color: var(--myindigo);
+}

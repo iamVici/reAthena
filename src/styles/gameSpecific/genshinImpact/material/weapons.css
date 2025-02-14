@@ -1,0 +1,80 @@
+.weapon-bow {
+  content: "";
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/material/weapons/weapon_Bow.webp");
+}
+
+.weapon-catalyst {
+  content: "";
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/material/weapons/weapon_Catalyst.webp");
+}
+
+.weapon-claymore {
+  content: "";
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/material/weapons/weapon_Claymore.webp");
+}
+
+.weapon-polearm {
+  content: "";
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/material/weapons/weapon_Polearm.webp");
+}
+
+.weapon-sword {
+  content: "";
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/material/weapons/weapon_Sword.webp");
+}
+
+.weapon-veridict {
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/weapons/claymore/Weapon_Verdict.webp");
+}
+
+.weapon-wolfs-gravestone {
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/weapons/claymore/Weapon_Gravestone.webp");
+}
+
+.weapon-xiphos-moonlight {
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/weapons/sword/Weapon-xiphos-moonlight.webp");
+}
+
+.weapon-dark-iron-sword {
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/weapons/sword/Weapon-dark-iron-sword.webp");
+}
+
+.weapon-toukabou-shigure {
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/weapons/sword/Weapon_toukabou-shigure.webp");
+}
+
+.weapon-toukabou-shigure {
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/weapons/bow/Weapons_End_of_the_Line.webp");
+}
+
+.weapon-cranes_echoing_call {
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/weapons/catalyst/Weapon_Cranes_Echoing_Call.webp");
+}
+
+.weapon-primordial-jade-cutter {
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/weapons/sword/Weapon_jade_cutter.webp");
+}
+
+.weapon-seasoned-hunters-bow {
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/weapons/bow/Weapon_seasoned-hunters-bow.webp");
+}
+
+.weapon-tulaytullahs-remembrance {
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/weapons/catalyst/weapon-tulaytullahs-remembrance.webp");
+}
+
+.weapon-staff-of-the-scarlet-sands {
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/weapons/polearm/weapon-staff-of-the-scarlet-sands.webp");
+}
+
+.weapon-the-unforged {
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/weapons/claymore/weapon-the-unforged.webp");
+}
+
+.weapon-the-unforged-bigsize {
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/weapons/claymore/weapon-the-unforged-a.png");
+}
+
+.weapon-the-unforged-bigsize-reforged {
+  background-image: url("../../../../../public/assets/gameSpecific/genshinImpact/weapons/claymore/weapon-the-unforged-b.webp");
+}

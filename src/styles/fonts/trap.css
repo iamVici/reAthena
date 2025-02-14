@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Trap-Light';
+  src: url('../../../public/assets/fonts/trap/Trap-Light.otf') format('truetype');
+    font-weight: 200;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Trap-Regular';
+  src: url('../../../public/assets/fonts/trap/Trap-Regular.otf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Trap-Medium';
+  src: url('../../../public/assets/fonts/trap/Trap-Medium.otf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Trap-SemiBold';
+  src: url('../../../public/assets/fonts/trap/Trap-SemiBold.otf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Trap-Bold';
+  src: url('../../../public/assets/fonts/trap/Trap-Bold.otf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Trap-ExtraBold';
+  src: url('../../../public/assets/fonts/trap/Trap-ExtraBold.otf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Trap-Black';
+  src: url('../../../public/assets/fonts/trap/Trap-Black.otf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+.trap-font {
+  font-family: 'trap' !important;
+}
