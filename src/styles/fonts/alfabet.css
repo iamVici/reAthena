@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'alfabet';
+  src: url('../../../public/assets/fonts/alfabet/alfabet-regular.otf') format('woff2');
+       font-weight: 200 700;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'alfabet-thin';
+  src: url('../../../public/assets/fonts/alfabet/alfabet-thin.otf') format('woff2');
+}
+
+@font-face {
+  font-family: 'alfabet-light';
+  src: url('../../../public/assets/fonts/alfabet/alfabet-light.otf') format('woff2');
+}
+
+@font-face {
+  font-family: 'alfabet-regular';
+  src: url('../../../public/assets/fonts/alfabet/alfabet-regular.otf') format('woff2');
+}
+
+@font-face {
+  font-family: 'alfabet-bold';
+  src: url('../../../public/assets/fonts/alfabet/alfabet-bold.otf') format('woff2');
+}
+
+@font-face {
+  font-family: 'alfabet-black';
+  src: url('../../../public/assets/fonts/alfabet/alfabet-black.otf') format('woff2');
+}
+
+.alfabet-font {
+  font-family: 'alfabet' !important;
+}

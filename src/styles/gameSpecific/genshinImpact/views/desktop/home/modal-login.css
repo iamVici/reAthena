@@ -159,3 +159,8 @@
 .modal-login-header-area {
   margin-bottom: 8px;
 }
+
+.modal-footer {
+  font-family: 'dmsans';
+  font-size: 12px;
+}
