@@ -2,7 +2,7 @@
 
 [![Link para o Projeto reAthena na Vercel](https://img.shields.io/badge/Acesse%20o%20Projeto%20na-Vercel-blueviolet?style=for-the-badge)](https://re-athena.vercel.app/)
 
-# reAthena | Current Version: v0.11b.
+# reAthena | Current Version: v0.14b.
 
 ## About the Project
 
